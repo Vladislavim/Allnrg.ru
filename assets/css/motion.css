@@ -13,18 +13,77 @@ html.lenis body {
 
 @media (prefers-reduced-motion: no-preference) {
   .reveal-item {
+    --reveal-y: 12px;
+    --reveal-duration: 540ms;
+    --reveal-ease: cubic-bezier(.2, .72, .18, 1);
     opacity: 0;
-    transform: translate3d(0, 18px, 0);
+    transform: translate3d(0, var(--reveal-y), 0);
     transition:
-      opacity 620ms cubic-bezier(.22, 1, .36, 1),
-      transform 620ms cubic-bezier(.22, 1, .36, 1);
+      opacity var(--reveal-duration) var(--reveal-ease),
+      transform var(--reveal-duration) var(--reveal-ease);
     transition-delay: var(--reveal-delay, 0ms);
     will-change: opacity, transform;
+  }
+
+  .reveal-item.reveal-hero {
+    --reveal-y: 14px;
+    --reveal-duration: 760ms;
+    --reveal-ease: cubic-bezier(.18, .82, .2, 1);
+  }
+
+  .reveal-item.reveal-title {
+    --reveal-y: 8px;
+    --reveal-duration: 460ms;
+  }
+
+  .reveal-item.reveal-copy {
+    --reveal-y: 6px;
+    --reveal-duration: 500ms;
+    --reveal-ease: cubic-bezier(.24, .68, .22, 1);
+  }
+
+  .reveal-item.reveal-card {
+    --reveal-y: 13px;
+    --reveal-duration: 500ms;
+  }
+
+  .reveal-item.reveal-form {
+    --reveal-y: 10px;
+    --reveal-duration: 560ms;
+  }
+
+  .reveal-item.reveal-media {
+    --reveal-y: 11px;
+    --reveal-duration: 600ms;
+  }
+
+  .reveal-item.reveal-quiet {
+    --reveal-y: 5px;
+    --reveal-duration: 420ms;
   }
 
   .reveal-item.is-revealed {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+
+  @media (max-width: 767px) {
+    .reveal-item {
+      --reveal-y: 7px;
+      --reveal-duration: 420ms;
+    }
+
+    .reveal-item.reveal-hero {
+      --reveal-y: 8px;
+      --reveal-duration: 520ms;
+    }
+
+    .reveal-item.reveal-card,
+    .reveal-item.reveal-form,
+    .reveal-item.reveal-media {
+      --reveal-y: 7px;
+      --reveal-duration: 430ms;
+    }
   }
 }
 
