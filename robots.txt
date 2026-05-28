@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://allnrg.ru/sitemap.xml

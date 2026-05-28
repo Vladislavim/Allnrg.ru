@@ -1,0 +1,21 @@
+{
+  "name": "clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wordstat": "node tools-collect-wordstat.cjs",
+    "seo:apply": "node tools-apply-superseo.cjs",
+    "qa:seo": "node tools-qa-superseo.cjs",
+    "seo:all": "node tools-collect-wordstat.cjs && node tools-apply-superseo.cjs && node tools-qa-superseo.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "lighthouse": "^13.3.0",
+    "playwright-core": "^1.60.0",
+    "sharp": "^0.34.5"
+  }
+}

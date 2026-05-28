@@ -1,0 +1,7 @@
+node_modules/
+reports/
+seo/.cache/
+.env
+.DS_Store
+Thumbs.db
+*.log

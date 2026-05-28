@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-MediumItalic.eot');
+    src: local('Graphik LCG Medium Italic'), local('GraphikLCG-MediumItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-MediumItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-MediumItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-SuperItalic.eot');
+    src: local('Graphik LCG Super Italic'), local('GraphikLCG-SuperItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-SuperItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-SuperItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-SuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-SemiboldItalic.eot');
+    src: local('Graphik LCG Semibold Italic'), local('GraphikLCG-SemiboldItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-SemiboldItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-SemiboldItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Black.eot');
+    src: local('Graphik LCG Black'), local('GraphikLCG-Black'),
+        url('fonts/graphic_lcg/GraphikLCG-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Black.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Black.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Super.eot');
+    src: local('Graphik LCG Super'), local('GraphikLCG-Super'),
+        url('fonts/graphic_lcg/GraphikLCG-Super.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Super.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Super.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Thin.eot');
+    src: local('Graphik LCG Thin'), local('GraphikLCG-Thin'),
+        url('fonts/graphic_lcg/GraphikLCG-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Thin.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Thin.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-ExtralightItalic.eot');
+    src: local('Graphik LCG Extralight Italic'), local('GraphikLCG-ExtralightItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-ExtralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-ExtralightItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-ExtralightItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Regular.eot');
+    src: local('Graphik LCG Regular'), local('GraphikLCG-Regular'),
+        url('fonts/graphic_lcg/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Regular.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Regular.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-BoldItalic.eot');
+    src: local('Graphik LCG Bold Italic'), local('GraphikLCG-BoldItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-BoldItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-BoldItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-LightItalic.eot');
+    src: local('Graphik LCG Light Italic'), local('GraphikLCG-LightItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-LightItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-LightItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-BlackItalic.eot');
+    src: local('Graphik LCG Black Italic'), local('GraphikLCG-BlackItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-BlackItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-BlackItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Medium.eot');
+    src: local('Graphik LCG Medium'), local('GraphikLCG-Medium'),
+        url('fonts/graphic_lcg/GraphikLCG-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Medium.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Medium.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Light.eot');
+    src: local('Graphik LCG Light'), local('GraphikLCG-Light'),
+        url('fonts/graphic_lcg/GraphikLCG-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Light.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Light.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Semibold.eot');
+    src: local('Graphik LCG Semibold'), local('GraphikLCG-Semibold'),
+        url('fonts/graphic_lcg/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Semibold.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Bold.eot');
+    src: local('Graphik LCG Bold'), local('GraphikLCG-Bold'),
+        url('fonts/graphic_lcg/GraphikLCG-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Bold.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Bold.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-Extralight.eot');
+    src: local('Graphik LCG Extralight'), local('GraphikLCG-Extralight'),
+        url('fonts/graphic_lcg/GraphikLCG-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-Extralight.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-Extralight.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-ThinItalic.eot');
+    src: local('Graphik LCG Thin Italic'), local('GraphikLCG-ThinItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-ThinItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-ThinItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('fonts/graphic_lcg/GraphikLCG-RegularItalic.eot');
+    src: local('Graphik LCG Regular Italic'), local('GraphikLCG-RegularItalic'),
+        url('fonts/graphic_lcg/GraphikLCG-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/graphic_lcg/GraphikLCG-RegularItalic.woff2') format('woff2'),
+        url('fonts/graphic_lcg/GraphikLCG-RegularItalic.woff') format('woff'),
+        url('fonts/graphic_lcg/GraphikLCG-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

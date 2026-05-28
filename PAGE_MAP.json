@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "o-nas",
+    "file": "about.html"
+  },
+  {
+    "slug": "bombonera",
+    "file": "bombonera.html"
+  },
+  {
+    "slug": "kontakty",
+    "file": "contacts.html"
+  },
+  {
+    "slug": "/",
+    "file": "index.html"
+  },
+  {
+    "slug": "kapremont",
+    "file": "kapremont.html"
+  },
+  {
+    "slug": "laboratoriya-kontrolya",
+    "file": "laboratoriya-kontrolya.html"
+  },
+  {
+    "slug": "negosudarstvennaya-ekspertiza",
+    "file": "negosudarstvennaya-ekspertiza.html"
+  },
+  {
+    "slug": "news",
+    "file": "news.html"
+  },
+  {
+    "slug": "objecti-infrastrukturi",
+    "file": "objecti-infrastrukturi.html"
+  },
+  {
+    "slug": "obrabotka-pers-dannih",
+    "file": "obrabotka-pers-dannih.html"
+  },
+  {
+    "slug": "poliklinika",
+    "file": "poliklinika.html"
+  },
+  {
+    "slug": "privacy",
+    "file": "privacy.html"
+  },
+  {
+    "slug": "proizvodstvenno-logisticheskii-kompleks",
+    "file": "proizvodstvenno-logisticheskii-kompleks.html"
+  },
+  {
+    "slug": "projectirovanie-barov-restoranov",
+    "file": "projectirovanie-barov-restoranov.html"
+  },
+  {
+    "slug": "projectirovanie-med-ucherezhdenii",
+    "file": "projectirovanie-med-ucherezhdenii.html"
+  },
+  {
+    "slug": "projectirovanie-objectov-turizma",
+    "file": "projectirovanie-objectov-turizma.html"
+  },
+  {
+    "slug": "projectirovanie-promishlennih-zdaniipredpriyatii",
+    "file": "projectirovanie-promishlennih-zdaniipredpriyatii.html"
+  },
+  {
+    "slug": "projectirovanie-selskogo-lesnogo-hozyastva",
+    "file": "projectirovanie-selskogo-lesnogo-hozyastva.html"
+  },
+  {
+    "slug": "projectirovanie-sport-soroozhenii",
+    "file": "projectirovanie-sport-soroozhenii.html"
+  },
+  {
+    "slug": "our_projects",
+    "file": "projects.html"
+  },
+  {
+    "slug": "promishlennoe-projectirovaniye",
+    "file": "promishlennoe-projectirovaniye.html"
+  },
+  {
+    "slug": "raschet-konstrukcij",
+    "file": "raschet-konstrukcij.html"
+  },
+  {
+    "slug": "uslugi-2",
+    "file": "services.html"
+  },
+  {
+    "slug": "tehnicheskoe-obsledovanie",
+    "file": "tehnicheskoe-obsledovanie.html"
+  },
+  {
+    "slug": "tehnicheskoe-perevooruzhenie-travilnogo-otdeleniya",
+    "file": "tehnicheskoe-perevooruzhenie-travilnogo-otdeleniya.html"
+  }
+]

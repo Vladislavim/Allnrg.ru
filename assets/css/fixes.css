@@ -1,0 +1,96 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-y: auto;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  overflow-y: clip;
+  background-color: #fff;
+}
+
+body > .elementor:first-child {
+  margin-top: -1px;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.allnrg-footer {
+  overflow: hidden;
+}
+
+.contacts-wrapper {
+  max-width: 1150px !important;
+  margin: 0 auto 70px !important;
+  padding: 0 !important;
+  color: #222 !important;
+}
+
+.contacts-title,
+.contacts-layout,
+.contacts-left,
+.contacts-right,
+.contacts-text {
+  color: #222 !important;
+}
+
+.contacts-label,
+.messengers-title {
+  color: #777 !important;
+}
+
+.contacts-layout {
+  display: flex !important;
+  gap: 64px !important;
+  align-items: flex-start !important;
+}
+
+.contacts-left {
+  width: 460px !important;
+  flex: 0 0 460px !important;
+}
+
+.contacts-right {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .contacts-wrapper {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .elementor-hidden-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .elementor-hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-hidden-mobile {
+    display: none !important;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}
