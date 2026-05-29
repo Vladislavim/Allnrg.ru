@@ -3604,6 +3604,7 @@ section.querySelectorAll('.exps-mob__card .exps-mob__card-btn').forEach(btn=>{
           // успех: только reset — модалка откроется слушателем reset
           this.reset();
           phone.value = '+7';
+          if (typeof window.openCbMok === 'function') window.openCbMok();
         }catch(err){
           console.error(err);
           // без alert
@@ -3622,6 +3623,7 @@ section.querySelectorAll('.exps-mob__card .exps-mob__card-btn').forEach(btn=>{
       box.hidden = false;
       setTimeout(()=> box.querySelector('.cbMok__mainbtn')?.focus(), 0);
     }
+    window.openCbMok = openCbMok;
     function closeCbMok(){ box.hidden = true; }
 
     box.addEventListener('click', (e)=>{
@@ -3631,12 +3633,15 @@ section.querySelectorAll('.exps-mob__card .exps-mob__card-btn').forEach(btn=>{
       if(e.key === 'Escape' && !box.hidden) closeCbMok();
     });
 
-    document.addEventListener('DOMContentLoaded', ()=>{
+    const bindReset = ()=>{
       const form = document.getElementById('cbMForm');
       if(form){
         form.addEventListener('reset', openCbMok);
       }
-    });
+    };
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', bindReset, { once: true })
+      : bindReset();
   })();
 
 /* inline script 53 */
