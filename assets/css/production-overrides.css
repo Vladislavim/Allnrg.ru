@@ -1642,6 +1642,16 @@ div[class*="img-wrap"]::after {
     right: 12px !important;
     z-index: 5 !important;
   }
+
+  .ae-mob__crumb {
+    color: #6f6f6f !important;
+  }
+
+  .ftM__link {
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
 }
 
 @media (max-width: 319px) {
@@ -1696,5 +1706,24 @@ div[class*="img-wrap"]::after {
 
   .messenger-fab {
     right: 12px !important;
+  }
+
+  .ck-banner {
+    bottom: 92px !important;
+    z-index: 2147483000 !important;
+    max-height: calc(100dvh - 132px) !important;
+    overflow: auto !important;
+  }
+
+  .ck-banner.ck-banner--show ~ .messenger-fab,
+  body:has(.ck-banner.ck-banner--show) .messenger-fab,
+  body:has(.ck-banner.ck-banner--show) .chat-widget {
+    z-index: 20 !important;
+    transform: translateY(120px) !important;
+    pointer-events: none !important;
+  }
+
+  .ck-modal {
+    z-index: 2147483100 !important;
   }
 }

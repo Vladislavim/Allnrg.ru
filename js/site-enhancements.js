@@ -250,11 +250,12 @@
 
         if (menuQuery.matches) {
           if (!video.dataset.desktopSrc) {
-            video.dataset.desktopSrc = video.getAttribute('src') || '/assets/background-imanakov-vlad-main.mp4';
+            video.dataset.desktopSrc = video.getAttribute('src') || video.dataset.src || '/assets/background-imanakov-vlad-main.mp4';
           }
 
           const mobileSrc = '/assets/background-imanakov-vlad-main-mobile.mp4';
-          if (video.getAttribute('src') !== mobileSrc) {
+          video.dataset.src = mobileSrc;
+          if (video.dataset.loaded === '1' && video.getAttribute('src') !== mobileSrc) {
             video.setAttribute('src', mobileSrc);
             video.setAttribute('preload', 'metadata');
             video.load();
@@ -264,9 +265,11 @@
         }
 
         const desktopSrc = video.dataset.desktopSrc || '/assets/background-imanakov-vlad-main.mp4';
-        if (video.getAttribute('src') !== desktopSrc) {
+        video.dataset.src = desktopSrc;
+        if (video.dataset.loaded === '1' && video.getAttribute('src') !== desktopSrc) {
           video.setAttribute('src', desktopSrc);
           video.load();
+          video.play().catch(function () {});
         }
       });
     }
@@ -288,6 +291,45 @@
 
     menuQuery.addEventListener('change', sync);
     sync();
+  }
+
+  function initLazyFooterVideos() {
+    const videos = Array.from(document.querySelectorAll('.liquid-name-video'));
+    if (!videos.length) return;
+
+    function loadVideo(video) {
+      if (!(video instanceof HTMLVideoElement) || video.dataset.loaded === '1') return;
+      const src = video.dataset.src || video.getAttribute('src');
+      if (!src) return;
+      video.dataset.loaded = '1';
+      if (video.getAttribute('src') !== src) video.setAttribute('src', src);
+      video.setAttribute('preload', 'metadata');
+      video.load();
+      video.play().catch(function () {});
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      window.setTimeout(function () { videos.forEach(loadVideo); }, 2500);
+      return;
+    }
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        loadVideo(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: '480px 0px' });
+
+    videos.forEach(function (video) {
+      if (!(video instanceof HTMLVideoElement)) return;
+      if (!video.dataset.src && video.getAttribute('src')) {
+        video.dataset.src = video.getAttribute('src');
+        video.removeAttribute('src');
+      }
+      video.setAttribute('preload', 'none');
+      observer.observe(video);
+    });
   }
 
   function initStableMobileHero() {
@@ -501,6 +543,43 @@
     }, true);
   }
 
+  function initA11yPolish() {
+    if (!document.querySelector('main, [role="main"]')) {
+      const mainHost = document.querySelector('[data-page-type="page"], .elementor, .stage, .contacts-page, .services-page, .projects-page');
+      if (mainHost instanceof HTMLElement) {
+        mainHost.setAttribute('role', 'main');
+        if (!mainHost.id) mainHost.id = 'main-content';
+      }
+    }
+
+    document.querySelectorAll('input, textarea, select').forEach(function (control, index) {
+      if (!(control instanceof HTMLElement)) return;
+      const type = (control.getAttribute('type') || '').toLowerCase();
+      if (['hidden', 'submit', 'button', 'reset'].includes(type)) return;
+      if (type === 'checkbox' && control.closest('label')) return;
+      if (control.id && document.querySelector('label[for="' + CSS.escape(control.id) + '"]')) return;
+      if (control.getAttribute('aria-label') || control.getAttribute('aria-labelledby')) return;
+
+      const label = control.getAttribute('placeholder') ||
+        control.getAttribute('name') ||
+        (type === 'tel' ? 'Телефон' : '') ||
+        (type === 'email' ? 'Почта' : '') ||
+        (type === 'time' ? 'Удобное время для звонка' : '') ||
+        'Поле формы ' + (index + 1);
+
+      control.setAttribute('aria-label', label);
+    });
+
+    document.querySelectorAll('button, a').forEach(function (el) {
+      if (!(el instanceof HTMLElement)) return;
+      if (el.textContent.trim() || el.getAttribute('aria-label') || el.getAttribute('aria-labelledby')) return;
+      const title = el.getAttribute('title');
+      const img = el.querySelector('img[alt]');
+      const label = title || (img && img.getAttribute('alt')) || 'Открыть';
+      el.setAttribute('aria-label', label);
+    });
+  }
+
   function ready(fn) {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', fn, { once: true });
@@ -516,7 +595,9 @@
     initHeaderModalButtons();
     initMobileMenuPolish();
     initMobileFooterDev();
+    initLazyFooterVideos();
     initStableMobileHero();
+    initA11yPolish();
     initProjectMediaFallbacks();
   });
 })();
