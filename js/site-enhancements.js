@@ -580,6 +580,59 @@
     });
   }
 
+  function initCookieFabLayer() {
+    const banner = document.getElementById('ck-banner');
+    const modal = document.getElementById('ck-modal');
+    const fab = document.querySelector('.messenger-fab');
+    const chat = document.querySelector('.chat-widget');
+    if (!(banner instanceof HTMLElement)) return;
+
+    function setFloatingBlocked(node, blocked) {
+      if (!(node instanceof HTMLElement)) return;
+
+      if (blocked) {
+        node.style.setProperty('z-index', '10', 'important');
+        node.style.setProperty('pointer-events', 'none', 'important');
+        node.style.setProperty('transform', 'translateY(140px)', 'important');
+        node.style.setProperty('opacity', '0', 'important');
+      } else {
+        node.style.removeProperty('z-index');
+        node.style.removeProperty('pointer-events');
+        node.style.removeProperty('transform');
+        node.style.removeProperty('opacity');
+      }
+    }
+
+    function sync() {
+      const bannerVisible = banner.classList.contains('ck-banner--show') &&
+        getComputedStyle(banner).display !== 'none' &&
+        banner.getClientRects().length > 0;
+      const modalOpen = modal instanceof HTMLElement && modal.classList.contains('ck-modal--open');
+      const cookieOpen = bannerVisible || modalOpen;
+
+      document.documentElement.classList.toggle('cookie-layer-open', cookieOpen);
+      banner.style.setProperty('z-index', '2147483646', 'important');
+      if (modal instanceof HTMLElement) {
+        modal.style.setProperty('z-index', '2147483647', 'important');
+      }
+
+      setFloatingBlocked(fab, cookieOpen);
+      setFloatingBlocked(chat, cookieOpen);
+    }
+
+    sync();
+
+    const observer = new MutationObserver(sync);
+    observer.observe(banner, { attributes: true, attributeFilter: ['class', 'style'] });
+    if (modal instanceof HTMLElement) {
+      observer.observe(modal, { attributes: true, attributeFilter: ['class', 'style'] });
+    }
+
+    window.addEventListener('resize', sync, { passive: true });
+    window.setTimeout(sync, 250);
+    window.setTimeout(sync, 1000);
+  }
+
   function ready(fn) {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', fn, { once: true });
@@ -598,6 +651,7 @@
     initLazyFooterVideos();
     initStableMobileHero();
     initA11yPolish();
+    initCookieFabLayer();
     initProjectMediaFallbacks();
   });
 })();

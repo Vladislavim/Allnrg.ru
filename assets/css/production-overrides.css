@@ -1750,3 +1750,20 @@ div[class*="img-wrap"]::after {
     z-index: 2147483100 !important;
   }
 }
+
+.ck-banner.ck-banner--show,
+.ck-modal.ck-modal--open {
+  z-index: 2147483646 !important;
+}
+
+.ck-modal.ck-modal--open {
+  z-index: 2147483647 !important;
+}
+
+html.cookie-layer-open .messenger-fab,
+html.cookie-layer-open .chat-widget {
+  z-index: 10 !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  transform: translateY(140px) !important;
+}

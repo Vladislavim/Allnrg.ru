@@ -2646,7 +2646,6 @@ window.addEventListener('load',()=>{
 
       // заранее подгружаем текущий и следующий слайд
       loadSlide(nextIdx);
-      loadSlide((nextIdx + 1) % total);
 
       idx = nextIdx;
       track.style.transform = 'translateX(' + (-idx * 100) + '%)';
@@ -2700,9 +2699,14 @@ window.addEventListener('load',()=>{
 
     // Старт: первый уже с картинкой, подгружаем второй
     slides[0].dataset.loaded = '1';
-    loadSlide(1);
     go(0);
-    start();
+    if (document.readyState === 'complete') {
+      window.setTimeout(start, 1800);
+    } else {
+      window.addEventListener('load', function () {
+        window.setTimeout(start, 1800);
+      }, { once: true });
+    }
 
     // Очистка
     unbind = () => {
