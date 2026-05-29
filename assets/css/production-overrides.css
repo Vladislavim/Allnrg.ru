@@ -501,6 +501,29 @@ div[class*="img-wrap"]::after {
   height: 26px !important;
 }
 
+@media (min-width: 768px) {
+  .stage #slider .track > .slide.is-loaded:first-child {
+    background-image: url("../optimized/2025/11/izobrazhenie_2025-11-06_172600314-1.min.webp") !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ae-mob__slide {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ae-mob__slide-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
 @media (max-width: 767px) {
   .exps-mob {
     padding-bottom: 72px !important;
