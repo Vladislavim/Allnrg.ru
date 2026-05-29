@@ -1807,3 +1807,106 @@ html.cookie-layer-open .messenger-fab {
 .cbok__title {
   margin-top: 0 !important;
 }
+
+.cbok__card,
+.cbTok__card,
+.cbMok__card {
+  width: min(520px, calc(100vw - 32px)) !important;
+  padding: 0 !important;
+}
+
+.cbok__frame,
+.cbTok__frame,
+.cbMok__frame {
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 30px 42px 28px !important;
+  box-sizing: border-box !important;
+}
+
+.cbok__inner {
+  padding: 0 !important;
+}
+
+.cbok__logo,
+.cbTok__logo,
+.cbMok__logo {
+  display: block !important;
+  width: 132px !important;
+  height: auto !important;
+  max-width: 42% !important;
+  margin: 0 auto 14px !important;
+  object-fit: contain !important;
+  transform: none !important;
+  filter: grayscale(1) brightness(0) !important;
+  opacity: .95 !important;
+}
+
+.cbok__title,
+.cbTok__title,
+.cbMok__title {
+  margin: 0 0 10px !important;
+  font-size: clamp(28px, 2.1vw, 34px) !important;
+  line-height: .98 !important;
+}
+
+.cbok__text,
+.cbTok__text,
+.cbMok__text {
+  margin: 0 0 20px !important;
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+}
+
+.cbok__mainbtn,
+.cbTok__mainbtn,
+.cbMok__mainbtn {
+  width: min(320px, 100%) !important;
+  margin: 18px auto 12px !important;
+}
+
+.cbok__links,
+.cbTok__links,
+.cbMok__links {
+  gap: 24px !important;
+}
+
+.cbok__icons,
+.cbTok__icons,
+.cbMok__icons {
+  margin: 18px 0 0 !important;
+}
+
+@media (max-width: 767px) {
+  .cbok__card,
+  .cbTok__card,
+  .cbMok__card {
+    width: min(390px, calc(100vw - 24px)) !important;
+  }
+
+  .cbok__frame,
+  .cbTok__frame,
+  .cbMok__frame {
+    padding: 28px 28px 24px !important;
+  }
+
+  .cbok__logo,
+  .cbTok__logo,
+  .cbMok__logo {
+    width: 122px !important;
+    max-width: 50% !important;
+    margin-bottom: 12px !important;
+  }
+
+  .cbok__title,
+  .cbTok__title,
+  .cbMok__title {
+    font-size: 30px !important;
+  }
+
+  .cbok__text,
+  .cbTok__text,
+  .cbMok__text {
+    font-size: 18px !important;
+  }
+}
