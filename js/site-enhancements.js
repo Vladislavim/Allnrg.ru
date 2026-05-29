@@ -591,22 +591,23 @@
       if (!(node instanceof HTMLElement)) return;
 
       if (blocked) {
-        node.style.setProperty('z-index', '10', 'important');
+        node.style.setProperty('z-index', '100', 'important');
         node.style.setProperty('pointer-events', 'none', 'important');
-        node.style.setProperty('transform', 'translateY(140px)', 'important');
-        node.style.setProperty('opacity', '0', 'important');
       } else {
         node.style.removeProperty('z-index');
         node.style.removeProperty('pointer-events');
-        node.style.removeProperty('transform');
-        node.style.removeProperty('opacity');
       }
     }
 
     function sync() {
-      const bannerVisible = banner.classList.contains('ck-banner--show') &&
-        getComputedStyle(banner).display !== 'none' &&
-        banner.getClientRects().length > 0;
+      const bannerStyle = getComputedStyle(banner);
+      const bannerRect = banner.getBoundingClientRect();
+      const bannerVisible = bannerStyle.display !== 'none' &&
+        bannerStyle.visibility !== 'hidden' &&
+        banner.getClientRects().length > 0 &&
+        bannerRect.bottom > 0 &&
+        bannerRect.top < window.innerHeight &&
+        (banner.classList.contains('ck-banner--show') || Number(bannerStyle.opacity) > 0.05);
       const modalOpen = modal instanceof HTMLElement && modal.classList.contains('ck-modal--open');
       const cookieOpen = bannerVisible || modalOpen;
 
