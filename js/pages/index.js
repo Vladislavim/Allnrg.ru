@@ -800,6 +800,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   if(!box) return;
 
   function openCalcSuccess(){
+    if (box.parentElement !== document.body) document.body.appendChild(box);
     box.hidden = false;
     setTimeout(()=>box.querySelector('.tendcalc__mainbtn')?.focus(), 0);
   }
@@ -1949,7 +1950,11 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   (function(){
     const box = document.getElementById('calcxok');
     if(!box) return;
-    function openCalcxOk(){ box.hidden = false; setTimeout(()=>box.querySelector('.calcxok__mainbtn')?.focus(), 0); }
+    function openCalcxOk(){
+      if (box.parentElement !== document.body) document.body.appendChild(box);
+      box.hidden = false;
+      setTimeout(()=>box.querySelector('.calcxok__mainbtn')?.focus(), 0);
+    }
     function closeCalcxOk(){ box.hidden = true; }
     box.addEventListener('click', (e)=>{
       if(e.target.matches('[data-calcxok-close], .calcxok__backdrop')) closeCalcxOk();
@@ -3216,6 +3221,7 @@ window.addEventListener('load',()=>{
   if(!dlg) return;
 
   function openCalcxMobOk(){
+    if (dlg.parentElement !== document.body) document.body.appendChild(dlg);
     dlg.hidden = false;
     setTimeout(()=> dlg.querySelector('.calcxmobok__mainbtn')?.focus(), 0);
   }
