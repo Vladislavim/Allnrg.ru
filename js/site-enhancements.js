@@ -634,6 +634,52 @@
     window.setTimeout(sync, 1000);
   }
 
+  function initFormSuccessFallbacks() {
+    const map = {
+      callbackForm: ['cbok'],
+      cbTForm: ['cbTok'],
+      cbMForm: ['cbMok'],
+      calcxForm: ['calcxok'],
+      calcxMobForm: ['calcxmobok'],
+      calcForm: ['tendcalc', 'tendcalc-success', 'tendcalcSuccess'],
+      tenderForm: ['successModal'],
+      callForm: ['successModal'],
+      axmForm: ['axmSuccess'],
+      axmMForm: ['axmMSuccess'],
+      'expsT-form': ['expsT-success']
+    };
+
+    function openDialog(dialog) {
+      if (!(dialog instanceof HTMLElement)) return false;
+      if (dialog.hasAttribute('open')) return true;
+      if (dialog.hidden === false || dialog.classList.contains('is-open')) return true;
+
+      dialog.hidden = false;
+      if (dialog.tagName === 'DIALOG' || dialog.classList.contains('modal') || dialog.getAttribute('role') === 'dialog') {
+        dialog.setAttribute('open', '');
+      }
+      dialog.classList.add('is-open');
+
+      const focusTarget = dialog.querySelector('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+      window.setTimeout(function () {
+        if (focusTarget instanceof HTMLElement) focusTarget.focus({ preventScroll: true });
+      }, 0);
+      return true;
+    }
+
+    document.addEventListener('reset', function (event) {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement) || !form.id) return;
+
+      window.setTimeout(function () {
+        const ids = map[form.id] || [];
+        ids.some(function (id) {
+          return openDialog(document.getElementById(id));
+        });
+      }, 0);
+    }, true);
+  }
+
   function ready(fn) {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', fn, { once: true });
@@ -653,6 +699,7 @@
     initStableMobileHero();
     initA11yPolish();
     initCookieFabLayer();
+    initFormSuccessFallbacks();
     initProjectMediaFallbacks();
   });
 })();

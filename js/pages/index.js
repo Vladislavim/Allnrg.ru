@@ -1,3 +1,4 @@
+function __allnrgReady(fn){ document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", fn, { once: true }) : fn(); }
 /* inline script 1 */
 (function(){
     const root=document.querySelector('.allnrg');
@@ -3223,7 +3224,7 @@ window.addEventListener('load',()=>{
     if(e.key === 'Escape' && !dlg.hidden) closeCalcxMobOk();
   });
 
-  document.addEventListener('DOMContentLoaded', ()=>{
+  __allnrgReady(()=>{
     const form = document.getElementById('calcxMobForm');
     if(form){
       form.addEventListener('reset', openCalcxMobOk);
