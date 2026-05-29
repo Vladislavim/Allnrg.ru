@@ -710,7 +710,11 @@
   const ENDPOINT = "https://api.web3forms.com/submit";
   const ACCESS_KEY = "\x34\x63\x65\x30\x61\x61\x64\x31\x2d\x63\x32\x37\x61\x2d\x34\x31\x65\x39\x2d\x61\x34\x33\x36\x2d\x32\x66\x63\x39\x64\x33\x31\x66\x62\x38\x66\x37";
 
-  window.addEventListener("DOMContentLoaded", function () {
+  const ready = (fn) => document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", fn, { once: true })
+    : fn();
+
+  ready(function () {
     const form = document.getElementById("calcForm");
     if (!form) return;
 
@@ -1131,7 +1135,11 @@
   // ОРИГИНАЛ: 4ce0aad1-c27a-41e9-a436-2fc9d31fb8f7 (обфусцирован)
   const ACCESS_KEY = "\x34\x63\x65\x30\x61\x61\x64\x31\x2d\x63\x32\x37\x61\x2d\x34\x31\x65\x39\x2d\x61\x34\x33\x36\x2d\x32\x66\x63\x39\x64\x33\x31\x66\x62\x38\x66\x37";
 
-  window.addEventListener("DOMContentLoaded", function () {
+  const ready = (fn) => document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", fn, { once: true })
+    : fn();
+
+  ready(function () {
     const form  = document.getElementById("callbackForm");
     if (!form) return;
 
@@ -1185,7 +1193,7 @@
         if (!res.ok || data.success === false) throw new Error((data && (data.message || data.error)) || ("HTTP " + res.status));
 
         // Успех — показываем всплывашку (без alert)
-        openCbSuccess();
+        if (typeof window.openCbSuccess === 'function') window.openCbSuccess();
 
         form.reset();
         phone.value = "+7";
@@ -1206,6 +1214,7 @@
     box.hidden = false;
     setTimeout(()=>box.querySelector('.cbok__mainbtn')?.focus(), 0);
   }
+  window.openCbSuccess = openCbSuccess;
   function closeCbSuccess(){ box.hidden = true; }
 
   box.addEventListener('click', (e)=>{
