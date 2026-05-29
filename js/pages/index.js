@@ -783,6 +783,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
         openCalcSuccess();
 
         form.reset(); ensurePrefix();
+      if (typeof window.openCalcxMobOk === 'function') window.openCalcxMobOk();
         try{ localStorage.removeItem("calcArea"); }catch(e){}
       } catch (err) {
         console.error(err);
@@ -1198,6 +1199,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
         form.reset();
         phone.value = "+7";
+        if (typeof window.openCbSuccess === 'function') window.openCbSuccess();
       } catch (e) {
         console.error(e);
         // без alert — можно добавить свой UI-статус при желании
@@ -2035,6 +2037,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
       if (typeof window.openCalcxOk === 'function') window.openCalcxOk();
 
       e.target.reset();
+      if (typeof window.openCalcxOk === 'function') window.openCalcxOk();
       ensurePrefixX();
       try{ localStorage.removeItem('calcxArea'); }catch(e){}
     }catch(err){
@@ -3198,6 +3201,7 @@ window.addEventListener('load',()=>{
       if(!resp.ok||(data&&data.success===false)){ throw new Error((data&&(data.message||data.error))||("HTTP "+resp.status)); }
       // успех: только ресет (модалка откроется слушателем reset)
       form.reset(); ensurePrefix();
+      if (typeof window.openCalcxMobOk === 'function') window.openCalcxMobOk();
     }catch(err){
       console.error(err);
       // без alert
@@ -3605,6 +3609,7 @@ section.querySelectorAll('.exps-mob__card .exps-mob__card-btn').forEach(btn=>{
           // успех: только reset — модалка откроется слушателем reset
           this.reset();
           phone.value = '+7';
+          if (typeof window.openCbMok === 'function') window.openCbMok();
           if (typeof window.openCbMok === 'function') window.openCbMok();
         }catch(err){
           console.error(err);

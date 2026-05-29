@@ -284,6 +284,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
         form.reset();
         phone.value = "+7";
+        if (typeof window.openCbSuccess === 'function') window.openCbSuccess();
       } catch (e) {
         console.error(e);
         // без alert — можно добавить свой UI-статус при желании
@@ -789,6 +790,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
           // успех: только reset — модалка откроется слушателем reset
           this.reset();
           phone.value = '+7';
+          if (typeof window.openCbMok === 'function') window.openCbMok();
         }catch(err){
           console.error(err);
           // без alert
