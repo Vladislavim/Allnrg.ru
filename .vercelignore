@@ -1,0 +1,7 @@
+node_modules
+.git
+.vercel
+reports
+seo/.cache
+qa-mobile-fixes
+*.log
