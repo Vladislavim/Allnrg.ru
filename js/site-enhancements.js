@@ -389,17 +389,37 @@
       return match ? match[1] : '';
     }
 
+    function isLightboxRoot(node) {
+      if (!(node instanceof HTMLElement)) return false;
+      const className = String(node.className || '');
+      return className.includes('__lightbox') &&
+        !className.includes('__lightbox-close') &&
+        !className.includes('__lightbox-backdrop') &&
+        !className.includes('__lightbox-img-wrap') &&
+        !!node.querySelector('img');
+    }
+
+    function findLightboxRoot(node) {
+      let current = node instanceof HTMLElement ? node : null;
+      while (current && current !== document.body) {
+        if (isLightboxRoot(current)) return current;
+        current = current.parentElement;
+      }
+      return null;
+    }
+
     function openLightbox(item) {
       const src = imageFromItem(item);
       if (!src) return;
 
       const section = item.closest('section, .case-ko, .plk-tab, .plk-mob, .eh-tab, .eh-mob, .ko-tab');
-      const lightbox = section && section.querySelector('[class*="__lightbox"]');
+      const lightbox = section && Array.from(section.querySelectorAll('[class*="__lightbox"]')).find(isLightboxRoot);
       if (!(lightbox instanceof HTMLElement)) return;
 
       const img = lightbox.querySelector('img');
       if (!(img instanceof HTMLImageElement)) return;
 
+      lightbox.removeAttribute('inert');
       img.src = src;
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
@@ -407,16 +427,56 @@
     }
 
     function closeLightbox(lightbox) {
+      if (lightbox.contains(document.activeElement)) {
+        document.activeElement.blur();
+      }
       lightbox.classList.remove('is-open');
       lightbox.setAttribute('aria-hidden', 'true');
+      lightbox.setAttribute('inert', '');
       document.documentElement.classList.remove('project-lightbox-open');
     }
+
+    document.querySelectorAll('[class*="__lightbox"]').forEach(function (lightbox) {
+      if (!isLightboxRoot(lightbox)) return;
+      if (!lightbox.classList.contains('is-open')) {
+        lightbox.setAttribute('inert', '');
+      }
+    });
+
+    new MutationObserver(function (records) {
+      records.forEach(function (record) {
+        const lightbox = record.target;
+        if (!isLightboxRoot(lightbox)) return;
+
+        const isHidden = lightbox.getAttribute('aria-hidden') === 'true' || !lightbox.classList.contains('is-open');
+        if (isHidden) {
+          if (lightbox.contains(document.activeElement) && document.activeElement instanceof HTMLElement) {
+            document.activeElement.blur();
+          }
+          lightbox.setAttribute('inert', '');
+          return;
+        }
+
+        lightbox.removeAttribute('inert');
+      });
+    }).observe(document.body, {
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['aria-hidden', 'class']
+    });
 
     window.addEventListener('load', function () {
       window.setTimeout(function () {
         document.querySelectorAll(sliderSelectors.join(',')).forEach(initSlider);
       }, 800);
     });
+
+    document.addEventListener('click', function (event) {
+      const earlyClose = event.target.closest('[class*="__lightbox-close"]');
+      if (earlyClose && document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
+    }, true);
 
     document.addEventListener('click', function (event) {
       const galleryItem = event.target.closest('[class*="__gallery-item"]');
@@ -427,15 +487,18 @@
 
       const closeTarget = event.target.closest('[class*="__lightbox-close"], [class*="__lightbox-backdrop"]');
       if (closeTarget) {
-        const lightbox = closeTarget.closest('[class*="__lightbox"]');
+        const lightbox = findLightboxRoot(closeTarget);
         if (lightbox instanceof HTMLElement) closeLightbox(lightbox);
       }
     });
 
     document.addEventListener('keydown', function (event) {
       if (event.key !== 'Escape') return;
+      if (document.activeElement instanceof HTMLElement && document.activeElement.closest('[class*="__lightbox"]')) {
+        document.activeElement.blur();
+      }
       document.querySelectorAll('[class*="__lightbox"].is-open').forEach(closeLightbox);
-    });
+    }, true);
   }
 
   function ready(fn) {

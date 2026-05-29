@@ -1625,6 +1625,16 @@ div[class*="img-wrap"]::after {
     border-radius: 0 !important;
   }
 
+  .plk-mob__lightbox img,
+  .eh-mob__lightbox img,
+  .case-ko__lightbox img,
+  .ko-tab__lightbox img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
   .plk-mob__lightbox-close,
   .eh-mob__lightbox-close,
   .ko-tab__lightbox-close {
