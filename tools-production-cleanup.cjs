@@ -5,17 +5,27 @@ const root = __dirname;
 const pages = fs.readdirSync(root).filter((name) => name.endsWith('.html')).sort();
 const site = 'https://allnrg.ru';
 const favicon = 'assets/img/2025/11/cropped-fav-2-32x32.png';
+const faviconBlock = [
+  '<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/2025/11/cropped-fav-2-32x32.png">',
+  '<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/2025/11/cropped-fav-2-192x192.png">',
+  '<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/2025/11/cropped-fav-2-180x180.png">'
+].join('\n');
+const pageMapPath = path.join(root, 'PAGE_MAP.json');
+const fileToSlug = fs.existsSync(pageMapPath)
+  ? new Map(JSON.parse(fs.readFileSync(pageMapPath, 'utf8')).map((page) => [page.file, page.slug]))
+  : new Map();
 
 function pageUrl(file) {
-  if (file === 'index.html') return `${site}/`;
-  return `${site}/${file.replace(/\.html$/, '')}/`;
+  const slug = fileToSlug.get(file);
+  if (!slug || slug === '/') return file === 'index.html' ? `${site}/` : `${site}/${file.replace(/\.html$/, '')}/`;
+  return `${site}/${String(slug).replace(/^\/+|\/+$/g, '')}/`;
 }
 
 function cleanHead(html, file) {
   html = html.replace(/\s*<link\s+rel=["']stylesheet["']\s+href=["']assets\/img\/elementor\/google-fonts\/css\/montserrat\.css["']\s*>\s*/gi, '\n');
 
   if (!/<link[^>]+rel=["']icon["']/i.test(html)) {
-    html = html.replace(/<\/head>/i, `  <link rel="icon" type="image/png" href="${favicon}">\n</head>`);
+    html = html.replace(/<\/head>/i, `  ${faviconBlock}\n</head>`);
   }
 
   const canonical = `<link rel="canonical" href="${pageUrl(file)}">`;
@@ -89,8 +99,8 @@ function addAccessibleNames(html) {
 }
 
 function normalizeBadLinks(html) {
-  html = html.replace(/href="privacy\.html"\.html"/g, 'href="privacy.html"');
-  html = html.replace(/href="obrabotka-pers-dannih\.html"\.html"/g, 'href="obrabotka-pers-dannih.html"');
+  html = html.replace(/href="privacy\.html"\.html"/g, 'href="/privacy/"');
+  html = html.replace(/href="obrabotka-pers-dannih\.html"\.html"/g, 'href="/obrabotka-pers-dannih/"');
   return html;
 }
 

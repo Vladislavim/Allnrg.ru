@@ -430,7 +430,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   top:30%;
   width:50%;
   height:135%;
-  background:url("assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
+  background:url("/assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
   opacity:1;
   transform:translate3d(0,var(--px-shift,0),0) scale(.5);
   pointer-events:none;
@@ -1234,7 +1234,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
 .proj-tab__brand--harmony{
   position:absolute; right:-6%; top:16%;
   width:54%; height:130%;
-  background:url("assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
+  background:url("/assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
   opacity:.9; transform:translate3d(0,var(--shift,0),0) scale(.52);
   pointer-events:none; z-index:0;
 }
@@ -2192,7 +2192,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   top:12%;
   width:64%;
   height:120%;
-  background:url("assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
+  background:url("/assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
   opacity:1;
   transform:translate3d(0,var(--shift,0),0) scale(.48);
   pointer-events:none;

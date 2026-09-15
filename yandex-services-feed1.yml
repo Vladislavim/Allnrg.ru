@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-06-11 21:49">
+  <shop>
+    <name>Альянс Энерджи</name>
+    <company>ООО «Альянс Энерджи»</company>
+    <url>https://allnrg.ru/</url>
+    <currencies>
+      <currency id="RUR" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Проектные услуги</category>
+    </categories>
+    <offers>
+      <offer id="ae-service-1" available="true">
+        <name>услуги проектной организации — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/uslugi-2/</url>
+        <price>50000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>услуги проектной организации. Услуги проектной организации: промышленное проектирование, BIM, инженерные системы, экспертиза, обследование зданий и расчет конструкций.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-2" available="true">
+        <name>промышленное проектирование — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/promishlennoe-projectirovaniye/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>промышленное проектирование. Промышленное проектирование зданий, предприятий и производственных объектов: проектная и рабочая документация, BIM и инженерные системы.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-3" available="true">
+        <name>проектирование торговых объектов — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-promishlennih-zdaniipredpriyatii/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование торговых объектов. Проектирование торговых центров, магазинов и объектов ритейла: планировки, инженерные разделы, рабочая документация и сопровождение.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-4" available="true">
+        <name>проектирование спортивных сооружений — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-sport-soroozhenii/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование спортивных сооружений. Проектирование спортивных сооружений и физкультурно-оздоровительных комплексов: проектная документация, BIM и сопровождение.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-5" available="true">
+        <name>проектирование медицинских учреждений — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-med-ucherezhdenii/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование медицинских учреждений. Проектирование медицинских учреждений, поликлиник и объектов здравоохранения с учетом инженерных требований, BIM и нормативов.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-6" available="true">
+        <name>проектирование объектов туризма — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-objectov-turizma/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование объектов туризма. Проектирование гостиниц, отелей, туристических комплексов и объектов отдыха: архитектурные, конструктивные и инженерные решения.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-7" available="true">
+        <name>проектирование объектов инфраструктуры — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/objecti-infrastrukturi/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование объектов инфраструктуры. Проектирование объектов инфраструктуры, дорог, развязок, парковок, вокзалов и депо с разработкой проектной и рабочей документации.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-8" available="true">
+        <name>проектирование ресторанов — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-barov-restoranov/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование ресторанов. Проектирование ресторанов, кафе, баров и предприятий общественного питания: планировки, инженерные системы, документация и сопровождение.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-9" available="true">
+        <name>проектирование сельскохозяйственных объектов — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/projectirovanie-selskogo-lesnogo-hozyastva/</url>
+        <price>70000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>проектирование сельскохозяйственных объектов. Проектирование объектов сельского и лесного хозяйства: производственные здания, инфраструктура, инженерные системы и документация.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-10" available="true">
+        <name>техническое обследование зданий — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/tehnicheskoe-obsledovanie/</url>
+        <price>30000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>техническое обследование зданий. Техническое обследование зданий и сооружений: оценка конструкций, дефектов, состояния инженерных систем и подготовка заключений.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-11" available="true">
+        <name>расчет строительных конструкций — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/raschet-konstrukcij/</url>
+        <price>30000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>расчет строительных конструкций. Расчет строительных конструкций для зданий и сооружений: проверка прочности, устойчивости, нагрузок и проектных решений.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-12" available="true">
+        <name>негосударственная экспертиза проектной документации — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/negosudarstvennaya-ekspertiza/</url>
+        <price>30000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>негосударственная экспертиза проектной документации. Негосударственная экспертиза проектной документации: проверка разделов проекта, нормативов и подготовка официального заключения.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-13" available="true">
+        <name>лаборатория неразрушающего контроля — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/laboratoriya-kontrolya/</url>
+        <price>30000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>лаборатория неразрушающего контроля. Лаборатория неразрушающего контроля: обследование прочности конструкций, инструментальные измерения и технические заключения.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+      <offer id="ae-service-14" available="true">
+        <name>капитальный ремонт зданий и сооружений — ООО «Альянс Энерджи»</name>
+        <url>https://allnrg.ru/kapremont/</url>
+        <price>100000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://allnrg.ru/assets/images/og-allnrg.jpg</picture>
+        <description>капитальный ремонт зданий и сооружений. Проектирование и сопровождение капитального ремонта зданий и сооружений: обследование, документация, инженерные решения и контроль.</description>
+        <sales_notes>Индивидуальный расчет после заявки</sales_notes>
+        <param name="Регион">Волгоград</param>
+        <param name="Организация">ООО «Альянс Энерджи»</param>
+        <param name="Телефон">+7 937 096-10-00</param>
+        <param name="Об исполнителе">Проектная организация в Волгограде: промышленное проектирование, рабочая документация, BIM, обследование и инженерно-строительная экспертиза.</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

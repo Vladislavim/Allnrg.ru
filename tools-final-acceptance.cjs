@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 const http = require('http');
 const { execFileSync } = require('child_process');
@@ -165,7 +165,7 @@ function schemaChecks(seoRows) {
     const errors = [];
     const schemaText = row.jsonLd.map((j) => JSON.stringify(j)).join('\n');
     if (/localhost|127\.0\.0\.1|\/mnt\/c\/Users/i.test(schemaText)) errors.push('local url');
-    if (!schemaText.includes('ООО') || !schemaText.includes('+7 (8442) 56-44-34') || !schemaText.includes('Волгоград')) errors.push('contact data incomplete');
+    if (!schemaText.includes('ООО') || !schemaText.includes('+7 (937) 096-10-00') || !schemaText.includes('Волгоград')) errors.push('contact data incomplete');
     if (!row.schemaTypes.includes('BreadcrumbList')) errors.push('no breadcrumb');
     if (row.page.type === 'service' && !row.schemaTypes.includes('Service')) errors.push('no Service');
     if (row.page.type === 'project' && !row.schemaTypes.includes('CreativeWork')) errors.push('no CreativeWork');

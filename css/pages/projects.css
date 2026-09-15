@@ -1,4 +1,4 @@
-/* inline style 1 */
+﻿/* inline style 1 */
 .seo-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
 /* inline style 2 */
@@ -325,7 +325,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
 .pfw .pfw-card__desc{font-size:14px;line-height:14px}
 .pfw .pfw-card__arrow{
   position:absolute;right:14px;bottom:14px;width:26px;height:26px;z-index:1;
-  background:url("assets/optimized/2025/10/strelka.webp") center/contain no-repeat
+  background:url("/assets/optimized/2025/10/strelka.webp") center/contain no-repeat
 }
 .pfw .pfw__wm{position:absolute;width:240px;opacity:.08;pointer-events:none;user-select:none;z-index:-1;transform:translate3d(0,0,0)}
 
@@ -751,7 +751,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
 
   .pfwtab__card-arrow {
     position:absolute; right:14px; bottom:14px; width:26px; height:26px; z-index:2;
-    background:url("assets/optimized/2025/10/strelka.webp") center/contain no-repeat;
+    background:url("/assets/optimized/2025/10/strelka.webp") center/contain no-repeat;
   }
 
   .pfwtab__wm { position:absolute; width:180px; opacity:.8; pointer-events:none; user-select:none; z-index:-1; }
@@ -1398,7 +1398,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
     bottom:12px;
     width:24px;
     height:24px;
-    background:url("assets/optimized/2025/10/strelka.webp") center/contain no-repeat;
+    background:url("/assets/optimized/2025/10/strelka.webp") center/contain no-repeat;
   }
 }
 

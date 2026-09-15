@@ -387,6 +387,27 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
     color: #111;
   }
 
+  .contacts-line--grouped {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .contacts-text--grouped {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.45;
+  }
+
+  .contacts-contact-label {
+    display: block;
+    color: #b0ad00;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
   /* === COPY ICON (iOS-СЃС‚РёР»СЊ, Р±РµР· СЂР°РјРєРё) === */
   .copy-trigger {
     width: 32px;
@@ -1138,6 +1159,19 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
     .contacts-tab-text a:hover {
       border-color: #E5E35A;
       color: #111;
+    }
+
+    .contacts-tab-line--grouped {
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .contacts-tab-text--grouped {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      line-height: 1.45;
     }
 
     /* РРєРѕРЅРєР° РєРѕРїРёСЂРѕРІР°РЅРёСЏ вЂ” РЅРѕРІС‹Р№ РєР»Р°СЃСЃ */
@@ -2000,6 +2034,37 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
     .contacts-mob-text a:hover {
       border-color: #E5E35A;
       color: #111;
+    }
+
+    .contacts-mob-line--grouped {
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .contacts-mob-text--grouped {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+      max-width: calc(100% - 38px);
+      line-height: 1.45;
+    }
+
+    .contacts-mob-text--grouped .contacts-contact-label {
+      color: #b0ad00;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .contacts-mob-text--grouped a {
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      overflow-wrap: anywhere;
     }
 
     /* РРєРѕРЅРєР° РєРѕРїРёСЂРѕРІР°РЅРёСЏ вЂ” РјРѕР±РёР»СЊРЅР°СЏ РІРµСЂСЃРёСЏ */

@@ -30,7 +30,22 @@ function walk(dir) {
 }
 walk(root);
 const slugToFile = new Map(pages.map(p => [p.slug, path.basename(p.dest)]));
+const fileToHref = new Map(pages.map(p => [path.basename(p.dest), p.slug === '' ? '/' : `/${p.slug}/`]));
 const sortedSlugs = [...slugToFile.keys()].filter(Boolean).sort((a,b)=>b.length-a.length);
+
+function cleanHrefForFile(file) {
+  return fileToHref.get(file) || file;
+}
+
+function normalizeInternalHtmlLinks(html) {
+  for (const [file, href] of fileToHref.entries()) {
+    const escaped = file.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    html = html.replace(new RegExp(`href=(["'])${escaped}#([^"']*)\\1`, 'gi'), `href=$1${href}#$2$1`);
+    html = html.replace(new RegExp(`href=(["'])${escaped}\\1`, 'gi'), `href=$1${href}$1`);
+    html = html.replace(new RegExp(`window\\.location\\.href\\s*=\\s*(["'])${escaped}\\1`, 'gi'), `window.location.href = $1${href}$1`);
+  }
+  return html;
+}
 
 function localize(html) {
   html = html.replace(/https?:\/\/allnrg\.ru\/wp-content\/uploads\//g, 'assets/img/');
@@ -50,19 +65,19 @@ function localize(html) {
 
   for (const slug of sortedSlugs) {
     const file = slugToFile.get(slug);
+    const href = cleanHrefForFile(file);
     const escaped = slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    html = html.replace(new RegExp(`https?:\\/\\/allnrg\\.ru\\/${escaped}\\/?`, 'g'), file);
-    html = html.replace(new RegExp(`\.\\/${escaped}\\/?`, 'g'), file);
-    html = html.replace(new RegExp(`href=["']?\\/${escaped}\\/?["']?`, 'g'), `href="${file}"`);
-    html = html.replace(new RegExp(`href=["']?${escaped}\\/?["']?`, 'g'), `href="${file}"`);
+    html = html.replace(new RegExp(`https?:\\/\\/allnrg\\.ru\\/${escaped}\\/?`, 'g'), href);
+    html = html.replace(new RegExp(`href=["']?\\/${escaped}\\/?["']?`, 'g'), `href="${href}"`);
+    html = html.replace(new RegExp(`href=["']?${escaped}\\/?["']?`, 'g'), `href="${href}"`);
   }
-  html = html.replace(/https?:\/\/allnrg\.ru\//g, 'index.html');
-  html = html.replace(/href=["']?\.?\/["']?/g, 'href="index.html"');
+  html = html.replace(/https?:\/\/allnrg\.ru\//g, '/');
+  html = html.replace(/href=["']?\.?\/["']?/g, 'href="/"');
   html = html.replace(/href=([a-z0-9._-]+\.html)"/gi, 'href="$1"');
   html = html.replace(/href=([a-z0-9._-]+\.html)'/gi, "href='$1'");
   html = html.replace(/window\.location\.href\s*=\s*([a-z0-9._-]+\.html)'/gi, "window.location.href = '$1'");
   html = html.replace(/href\.endsWith\(([a-z0-9._-]+\.html)'\)/gi, "href.endsWith('$1')");
-  return html;
+  return normalizeInternalHtmlLinks(html);
 }
 
 for (const page of pages) {

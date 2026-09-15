@@ -1,0 +1,40 @@
+﻿# Альянс Энерджи
+
+> Проектная организация в Волгограде. Компания работает с проектной и рабочей документацией, BIM, промышленным проектированием, инженерными системами, техническим обследованием, расчетом конструкций и экспертизой проектной документации.
+
+## Основные страницы
+
+- [Главная](https://allnrg.ru/): проектирование зданий и сооружений, BIM, проектная документация и инженерные решения.
+- [Услуги](https://allnrg.ru/uslugi-2/): направления проектной организации.
+- [Промышленное проектирование](https://allnrg.ru/promishlennoe-projectirovaniye/): проектная и рабочая документация для промышленных объектов.
+- [Проектирование торговых объектов](https://allnrg.ru/projectirovanie-promishlennih-zdaniipredpriyatii/): торговые центры, магазины, планировки и инженерные разделы.
+- [Техническое обследование](https://allnrg.ru/tehnicheskoe-obsledovanie/): оценка конструкций, дефектов и инженерных систем.
+- [Расчет конструкций](https://allnrg.ru/raschet-konstrukcij/): нагрузки, прочность, устойчивость и проверка проектных решений.
+- [Негосударственная экспертиза](https://allnrg.ru/negosudarstvennaya-ekspertiza/): проверка проектной документации и инженерных изысканий.
+- [Проекты](https://allnrg.ru/our_projects/): реализованные и описанные проектные работы.
+- [О компании](https://allnrg.ru/o-nas/): сведения о проектной организации.
+- [Контакты](https://allnrg.ru/kontakty/): телефон, почта и адрес.
+
+## Markdown-версии для AI-агентов
+
+- [Главная в Markdown](https://allnrg.ru/ai-content/index.md)
+- [Услуги в Markdown](https://allnrg.ru/ai-content/uslugi-2.md)
+- [Промышленное проектирование в Markdown](https://allnrg.ru/ai-content/promishlennoe-projectirovaniye.md)
+- [Проектирование торговых объектов в Markdown](https://allnrg.ru/ai-content/projectirovanie-promishlennih-zdaniipredpriyatii.md)
+- [Техническое обследование в Markdown](https://allnrg.ru/ai-content/tehnicheskoe-obsledovanie.md)
+- [Расчет конструкций в Markdown](https://allnrg.ru/ai-content/raschet-konstrukcij.md)
+- [Негосударственная экспертиза в Markdown](https://allnrg.ru/ai-content/negosudarstvennaya-ekspertiza.md)
+- [О компании в Markdown](https://allnrg.ru/ai-content/o-nas.md)
+- [Контакты в Markdown](https://allnrg.ru/ai-content/kontakty.md)
+
+## Контакты
+
+- Телефон: +7 (937) 096-10-00
+- Email: dr@allnrg.ru
+- Адрес: 400074, г. Волгоград, ул. Баррикадная 1К, офис 2
+- Сайт: https://allnrg.ru/
+
+## Файлы индексации
+
+- [Sitemap](https://allnrg.ru/sitemap.xml)
+- [Robots.txt](https://allnrg.ru/robots.txt)

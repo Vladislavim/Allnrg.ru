@@ -23,7 +23,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   if(successHome){
     successHome.addEventListener('click',e=>{
       e.preventDefault();
-      window.location.href='index.html'; /* редирект на главную */
+      window.location.href='/'; /* редирект на главную */
     });
   }
 
@@ -376,7 +376,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
       if (
         text === 'контакты' ||
-        href.endsWith('contacts.html') ||
+        href.endsWith('/kontakty/') || href.endsWith('/kontakty') ||
         href === '#kontakty' ||
         href === '#contacts'
       ){
@@ -685,7 +685,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
       if (
         text === 'контакты' ||
-        href.endsWith('contacts.html') ||
+        href.endsWith('/kontakty/') || href.endsWith('/kontakty') ||
         href === '#kontakty' ||
         href === '#contacts'
       ){
@@ -941,7 +941,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'contacts.html';
+                window.location.href = '/kontakty/';
                 return;
             }
 
@@ -953,7 +953,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'privacy.html';
+                window.location.href = '/privacy/';
                 return;
             }
         }, true);

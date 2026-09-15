@@ -353,7 +353,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   left: -15%;
   width: 50%;
   height: 260px;
-  background-image: url("assets/optimized/2025/10/logo_gray.webp");
+  background-image: url("/assets/optimized/2025/10/logo_gray.webp");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 260px auto;
@@ -1034,7 +1034,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   left: -15%;
   width: 50%;
   height: 260px;
-  background-image: url("assets/optimized/2025/10/logo_gray.webp");
+  background-image: url("/assets/optimized/2025/10/logo_gray.webp");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 260px auto;
@@ -1200,7 +1200,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   left: -20%;
   width: 70%;
   height: 220%;
-  background-image: url("assets/optimized/2025/10/logo_gray.webp");
+  background-image: url("/assets/optimized/2025/10/logo_gray.webp");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 220px auto;
@@ -1957,7 +1957,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
 .bim-mob{display:none}
 @media(max-width:767px){
 .bim-mob{display:block;position:relative;padding:10px 16px 32px;font-family:"Montserrat",system-ui,sans-serif;color:#181818;overflow:visible}
-.bim-mob__parallax{position:absolute;top:8%;left:-25%;width:80%;height:220px;background-image:url("assets/optimized/2025/10/logo_gray.webp");background-repeat:no-repeat;background-position:left top;background-size:180px auto;opacity:.06;z-index:-1;pointer-events:none}
+.bim-mob__parallax{position:absolute;top:8%;left:-25%;width:80%;height:220px;background-image:url("/assets/optimized/2025/10/logo_gray.webp");background-repeat:no-repeat;background-position:left top;background-size:180px auto;opacity:.06;z-index:-1;pointer-events:none}
 .bim-mob__title{font-size:24px;font-weight:800;margin:0 0 14px;line-height:1.15}
 .bim-mob__photo{margin:0 0 10px}
 .bim-mob__photo img{display:block;width:100%;height:auto}

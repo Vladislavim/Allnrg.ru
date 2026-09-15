@@ -23,7 +23,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   if(successHome){
     successHome.addEventListener('click',e=>{
       e.preventDefault();
-      window.location.href='index.html'; /* редирект на главную */
+      window.location.href='/'; /* редирект на главную */
     });
   }
 
@@ -184,6 +184,10 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 (function(){
   const modal = document.getElementById('consult-modal');
   if (!modal) return;
+
+  // Keep the fixed dialog relative to the viewport, even when page builders
+  // place its source markup inside a transformed container.
+  if (modal.parentElement !== document.body) document.body.appendChild(modal);
 
   const backdrop = modal.querySelector('.consult-modal__backdrop');
   const closeBtn = modal.querySelector('.consult-modal__close');
@@ -425,7 +429,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
       if (
         text === 'контакты' ||
-        href.endsWith('contacts.html') ||
+        href.endsWith('/kontakty/') || href.endsWith('/kontakty') ||
         href === '#kontakty' ||
         href === '#contacts'
       ){
@@ -480,6 +484,8 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 (function(){
   const modal = document.getElementById('ptccm-root');
   if (!modal) return;
+
+  if (modal.parentElement !== document.body) document.body.appendChild(modal);
 
   const backdrop = modal.querySelector('.ptccm__back');
   const closeBtn = modal.querySelector('.ptccm__close');
@@ -732,7 +738,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
       if (
         text === 'контакты' ||
-        href.endsWith('contacts.html') ||
+        href.endsWith('/kontakty/') || href.endsWith('/kontakty') ||
         href === '#kontakty' ||
         href === '#contacts'
       ){
@@ -788,16 +794,19 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 (function(){
   const modal = document.getElementById('imccm-root');
   if (!modal) return;
+  if (modal.parentElement !== document.body) document.body.appendChild(modal);
   const back  = modal.querySelector('.imccm__back');
   const close = modal.querySelector('.imccm__close');
 
   function openModal(){
     modal.setAttribute('open','');
     modal.setAttribute('aria-hidden','false');
+    document.documentElement.style.overflow = 'hidden';
   }
   function closeModal(){
     modal.removeAttribute('open');
     modal.setAttribute('aria-hidden','true');
+    document.documentElement.style.overflow = '';
   }
 
   // Клик по любому .im-btn внутри .im-proj
@@ -981,7 +990,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'contacts.html';
+                window.location.href = '/kontakty/';
                 return;
             }
 
@@ -993,7 +1002,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'privacy.html';
+                window.location.href = '/privacy/';
                 return;
             }
         }, true);

@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
@@ -10,8 +10,8 @@ const ORG = {
   name: 'ООО «Альянс Энерджи»',
   legalName: 'Общество с ограниченной ответственностью «Альянс Энерджи»',
   url: SITE,
-  telephone: '+7 (8442) 56-44-34',
-  email: 'mail@allnrg.ru',
+  telephone: '+7 (937) 096-10-00',
+  email: 'dr@allnrg.ru',
   address: '400005, Волгоград, пр-т им. В.И. Ленина, 86',
   locality: 'Волгоград',
   taxID: '3444219320',
@@ -60,6 +60,11 @@ function stripTags(s) {
 
 function urlFor(page) {
   return page.slug === '/' ? `${SITE}/` : `${SITE}${page.slug}`;
+}
+
+function hrefForFile(file) {
+  const page = PAGES.find((item) => item.file === file);
+  return page ? page.slug : file;
 }
 
 function schemaFor(page) {
@@ -297,10 +302,14 @@ function buildSeoMap(clusters) {
 }
 
 function recommendedLinks(page) {
-  if (page.type === 'service') return ['services.html', 'projects.html', 'contacts.html'];
-  if (page.type === 'project') return ['projects.html', 'services.html', 'contacts.html'];
-  if (page.type === 'home') return ['services.html', 'projects.html', 'contacts.html'];
-  return ['index.html', 'services.html', 'contacts.html'];
+  const files = page.type === 'service'
+    ? ['services.html', 'projects.html', 'contacts.html']
+    : page.type === 'project'
+      ? ['projects.html', 'services.html', 'contacts.html']
+      : page.type === 'home'
+        ? ['services.html', 'projects.html', 'contacts.html']
+        : ['index.html', 'services.html', 'contacts.html'];
+  return files.map(hrefForFile);
 }
 
 function cannibalizationRisk(page) {

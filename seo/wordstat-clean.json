@@ -1,155 +1,446 @@
 {
-  "generatedAt": "2026-05-27T16:19:35.754Z",
-  "totalKeywords": 923,
-  "keywords": [
+  "generatedAt": "2026-05-29T19:54:11.093Z",
+  "sourceTotalKeywords": 923,
+  "totalKeywords": 795,
+  "removedNoiseCount": 128,
+  "removedNoiseExamples": [
     {
       "phrase": "сетевой город волгоград",
       "normalized": "сетевой город волгоград",
-      "countMax": 253950,
-      "countSum": 933159,
-      "appearances": 4,
-      "seeds": [
-        "проектная организация Волгоград",
-        "проектирование Волгоград"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "оценки",
       "normalized": "оценки",
-      "countMax": 87794,
-      "countSum": 134448,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "рассчитать",
       "normalized": "рассчитать",
-      "countMax": 65818,
-      "countSum": 101254,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "посчитать",
       "normalized": "посчитать",
-      "countMax": 26344,
-      "countSum": 41171,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "время в волгограде",
       "normalized": "время в волгограде",
-      "countMax": 23010,
-      "countSum": 40572,
-      "appearances": 2,
-      "seeds": [
-        "проектирование Волгоград"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "ивц жкх и тэк волгоград",
       "normalized": "ивц жкх и тэк волгоград",
-      "countMax": 20186,
-      "countSum": 39445,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза Волгоград"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
     {
       "phrase": "какая оценка",
       "normalized": "какая оценка",
-      "countMax": 17257,
-      "countSum": 25696,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "reason": "irrelevant_or_informational_noise"
     },
+    {
+      "phrase": "какие документы нужны",
+      "normalized": "какие документы нужны",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "новости волгограда и волгоградской",
+      "normalized": "новости волгограда и волгоградской",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "новости волгограда и волгоградской области",
+      "normalized": "новости волгограда и волгоградской области",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "анализаторы",
+      "normalized": "анализаторы",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "исследование это",
+      "normalized": "исследование это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "мои документы",
+      "normalized": "мои документы",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "трудовая деятельность",
+      "normalized": "трудовая деятельность",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "проектная работа",
+      "normalized": "проектная работа",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "документооборот",
+      "normalized": "документооборот",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "виды документов",
+      "normalized": "виды документов",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "рассчитать объем",
+      "normalized": "рассчитать объем",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "engineer",
+      "normalized": "engineer",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "engineering",
+      "normalized": "engineering",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "а строй",
+      "normalized": "а строй",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "перечень документов",
+      "normalized": "перечень документов",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "объект исследования",
+      "normalized": "объект исследования",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "лабораторная диагностика",
+      "normalized": "лабораторная диагностика",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "планировка дома",
+      "normalized": "планировка дома",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "сооружение это",
+      "normalized": "сооружение это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "что такое документ",
+      "normalized": "что такое документ",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "construction",
+      "normalized": "construction",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "что такое формула",
+      "normalized": "что такое формула",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "диагностика это",
+      "normalized": "диагностика это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "экспертное мнение",
+      "normalized": "экспертное мнение",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "акт осмотра",
+      "normalized": "акт осмотра",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "оценка лица",
+      "normalized": "оценка лица",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "сфера документы",
+      "normalized": "сфера документы",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "строение анализатора",
+      "normalized": "строение анализатора",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "оценка недвижимости",
+      "normalized": "оценка недвижимости",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "калькулятор систем",
+      "normalized": "калькулятор систем",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "отделы анализатора",
+      "normalized": "отделы анализатора",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "трудовая деятельность это",
+      "normalized": "трудовая деятельность это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "заключение эксперта",
+      "normalized": "заключение эксперта",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "экспертная оценка",
+      "normalized": "экспертная оценка",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "лабораторные методы исследования",
+      "normalized": "лабораторные методы исследования",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "ооо инжиниринг",
+      "normalized": "ооо инжиниринг",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "дом архитектора",
+      "normalized": "дом архитектора",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "что такое себестоимость",
+      "normalized": "что такое себестоимость",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "экспертное заключение",
+      "normalized": "экспертное заключение",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "себестоимость это",
+      "normalized": "себестоимость это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "сведения о трудовой деятельности",
+      "normalized": "сведения о трудовой деятельности",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "анализируй то",
+      "normalized": "анализируй то",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "строй и живи",
+      "normalized": "строй и живи",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "объект исследования это",
+      "normalized": "объект исследования это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "все формулы площадей",
+      "normalized": "все формулы площадей",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "площадь застройки",
+      "normalized": "площадь застройки",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "проверка недвижимости",
+      "normalized": "проверка недвижимости",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "уставные документы",
+      "normalized": "уставные документы",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "экспертное мнение личный кабинет",
+      "normalized": "экспертное мнение личный кабинет",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "оценка за тест",
+      "normalized": "оценка за тест",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "методы ценообразования",
+      "normalized": "методы ценообразования",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "цена товара это количество",
+      "normalized": "цена товара это количество",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "теха",
+      "normalized": "теха",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "эксперт ра",
+      "normalized": "эксперт ра",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "autodesk revit",
+      "normalized": "autodesk revit",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "анализатор состоит из",
+      "normalized": "анализатор состоит из",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "бюро смэ",
+      "normalized": "бюро смэ",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "ценообразование это",
+      "normalized": "ценообразование это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "хочу оценку",
+      "normalized": "хочу оценку",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "экспертное мнение вход",
+      "normalized": "экспертное мнение вход",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "фз о специальной оценке условий труда",
+      "normalized": "фз о специальной оценке условий труда",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "стройнадзор",
+      "normalized": "стройнадзор",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "стройком",
+      "normalized": "стройком",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "окончательный анализ",
+      "normalized": "окончательный анализ",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "калькуляция это",
+      "normalized": "калькуляция это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "калькулятор ск",
+      "normalized": "калькулятор ск",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "госстройнадзор",
+      "normalized": "госстройнадзор",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "инжиниринг это",
+      "normalized": "инжиниринг это",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "ск строй",
+      "normalized": "ск строй",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "как считается площадь",
+      "normalized": "как считается площадь",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "строймонтаж",
+      "normalized": "строймонтаж",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "какие документы нужны для получения прав",
+      "normalized": "какие документы нужны для получения прав",
+      "reason": "irrelevant_or_informational_noise"
+    },
+    {
+      "phrase": "какие документы нужны для трудоустройства",
+      "normalized": "какие документы нужны для трудоустройства",
+      "reason": "irrelevant_or_informational_noise"
+    }
+  ],
+  "seeds": [
+    "проектирование промышленных объектов",
+    "промышленное проектирование",
+    "проектирование зданий и сооружений",
+    "проектная документация",
+    "рабочая документация",
+    "BIM-проектирование",
+    "BIM-моделирование",
+    "инженерные системы",
+    "проектирование инженерных систем",
+    "строительная экспертиза",
+    "строительный консалтинг",
+    "техническое обследование зданий",
+    "расчет конструкций",
+    "негосударственная экспертиза",
+    "инженерно-техническая экспертиза",
+    "лаборатория неразрушающего контроля",
+    "проектирование спортивных сооружений",
+    "проектирование медицинских учреждений",
+    "проектирование объектов туризма",
+    "проектирование объектов инфраструктуры",
+    "проектирование торговых объектов",
+    "проектирование объектов общественного питания",
+    "проектирование сельскохозяйственных объектов",
+    "проектирование лесного хозяйства",
+    "проектная организация Волгоград",
+    "проектирование Волгоград",
+    "строительная экспертиза Волгоград",
+    "проектирование промышленных объектов Волгоград"
+  ],
+  "regions": [
+    "Волгоград",
+    "Волгоградская область",
+    "Россия"
+  ],
+  "keywords": [
     {
       "phrase": "волгоград 24",
       "normalized": "волгоград 24",
@@ -167,29 +458,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "какие документы нужны",
-      "normalized": "какие документы нужны",
-      "countMax": 14759,
-      "countSum": 22748,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -210,8 +480,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -231,51 +501,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "новости волгограда и волгоградской",
-      "normalized": "новости волгограда и волгоградской",
-      "countMax": 11792,
-      "countSum": 15356,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза Волгоград"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": true,
-      "commercial": false
-    },
-    {
-      "phrase": "новости волгограда и волгоградской области",
-      "normalized": "новости волгограда и волгоградской области",
-      "countMax": 11137,
-      "countSum": 43449,
-      "appearances": 6,
-      "seeds": [
-        "проектная организация Волгоград",
-        "проектирование Волгоград",
-        "строительная экспертиза Волгоград"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -296,8 +522,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -318,8 +544,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -361,29 +587,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "анализаторы",
-      "normalized": "анализаторы",
-      "countMax": 7539,
-      "countSum": 12367,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -403,8 +608,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -425,8 +630,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -467,8 +672,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -488,29 +693,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "исследование это",
-      "normalized": "исследование это",
-      "countMax": 4701,
-      "countSum": 7164,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -530,8 +714,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -542,48 +726,6 @@
       "appearances": 2,
       "seeds": [
         "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "мои документы",
-      "normalized": "мои документы",
-      "countMax": 3802,
-      "countSum": 5826,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "трудовая деятельность",
-      "normalized": "трудовая деятельность",
-      "countMax": 3612,
-      "countSum": 5463,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
       ],
       "regions": [
         "Волгоград",
@@ -615,8 +757,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -628,50 +770,6 @@
       "seeds": [
         "проектирование промышленных объектов",
         "проектная документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "проектная работа",
-      "normalized": "проектная работа",
-      "countMax": 2736,
-      "countSum": 12979,
-      "appearances": 6,
-      "seeds": [
-        "проектирование промышленных объектов",
-        "промышленное проектирование",
-        "проектирование инженерных систем"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "документооборот",
-      "normalized": "документооборот",
-      "countMax": 2704,
-      "countSum": 4370,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
       ],
       "regions": [
         "Волгоград",
@@ -702,29 +800,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "виды документов",
-      "normalized": "виды документов",
-      "countMax": 2622,
-      "countSum": 4221,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -744,28 +821,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "рассчитать объем",
-      "normalized": "рассчитать объем",
-      "countMax": 2521,
-      "countSum": 3759,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -807,50 +863,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "engineer",
-      "normalized": "engineer",
-      "countMax": 2469,
-      "countSum": 4050,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "engineering",
-      "normalized": "engineering",
-      "countMax": 2469,
-      "countSum": 4050,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -870,8 +884,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -891,8 +905,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -937,8 +951,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -959,50 +973,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "а строй",
-      "normalized": "а строй",
-      "countMax": 2163,
-      "countSum": 3219,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "перечень документов",
-      "normalized": "перечень документов",
-      "countMax": 2134,
-      "countSum": 3364,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1023,27 +995,6 @@
       ],
       "intent": "informational",
       "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "объект исследования",
-      "normalized": "объект исследования",
-      "countMax": 1952,
-      "countSum": 3137,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "building_design",
       "geo": false,
       "commercial": false
     },
@@ -1108,29 +1059,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "лабораторная диагностика",
-      "normalized": "лабораторная диагностика",
-      "countMax": 1607,
-      "countSum": 2882,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "ndt_lab",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1150,29 +1080,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "планировка дома",
-      "normalized": "планировка дома",
-      "countMax": 1594,
-      "countSum": 5009,
-      "appearances": 4,
-      "seeds": [
-        "проектирование зданий и сооружений",
-        "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -1193,7 +1101,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -1220,28 +1128,6 @@
       "commercial": false
     },
     {
-      "phrase": "сооружение это",
-      "normalized": "сооружение это",
-      "countMax": 1455,
-      "countSum": 4480,
-      "appearances": 4,
-      "seeds": [
-        "расчет конструкций",
-        "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "волгоградская правда",
       "normalized": "волгоградская правда",
       "countMax": 1445,
@@ -1258,7 +1144,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -1279,8 +1165,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1365,7 +1251,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -1409,8 +1295,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "industrial_design",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1431,8 +1317,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1453,8 +1339,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1465,48 +1351,6 @@
       "appearances": 2,
       "seeds": [
         "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "что такое документ",
-      "normalized": "что такое документ",
-      "countMax": 999,
-      "countSum": 1598,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "construction",
-      "normalized": "construction",
-      "countMax": 932,
-      "countSum": 1475,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
       ],
       "regions": [
         "Волгоград",
@@ -1542,48 +1386,6 @@
       "commercial": false
     },
     {
-      "phrase": "что такое формула",
-      "normalized": "что такое формула",
-      "countMax": 922,
-      "countSum": 1417,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "диагностика это",
-      "normalized": "диагностика это",
-      "countMax": 899,
-      "countSum": 1434,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "этапы проекта",
       "normalized": "этапы проекта",
       "countMax": 865,
@@ -1592,27 +1394,6 @@
       "seeds": [
         "промышленное проектирование",
         "проектная документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "экспертное мнение",
-      "normalized": "экспертное мнение",
-      "countMax": 841,
-      "countSum": 1274,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
       ],
       "regions": [
         "Волгоград",
@@ -1664,7 +1445,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -1685,8 +1466,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -1737,112 +1518,6 @@
       "commercial": false
     },
     {
-      "phrase": "акт осмотра",
-      "normalized": "акт осмотра",
-      "countMax": 779,
-      "countSum": 1180,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "оценка лица",
-      "normalized": "оценка лица",
-      "countMax": 730,
-      "countSum": 1152,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "сфера документы",
-      "normalized": "сфера документы",
-      "countMax": 721,
-      "countSum": 1059,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "строение анализатора",
-      "normalized": "строение анализатора",
-      "countMax": 707,
-      "countSum": 2344,
-      "appearances": 4,
-      "seeds": [
-        "строительная экспертиза",
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "оценка недвижимости",
-      "normalized": "оценка недвижимости",
-      "countMax": 706,
-      "countSum": 1248,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "волгоградская 41",
       "normalized": "волгоградская 41",
       "countMax": 671,
@@ -1859,50 +1534,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
-      "commercial": false
-    },
-    {
-      "phrase": "калькулятор систем",
-      "normalized": "калькулятор систем",
-      "countMax": 637,
-      "countSum": 955,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "отделы анализатора",
-      "normalized": "отделы анализатора",
-      "countMax": 637,
-      "countSum": 1010,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
       "commercial": false
     },
     {
@@ -1948,48 +1581,6 @@
       "commercial": false
     },
     {
-      "phrase": "трудовая деятельность это",
-      "normalized": "трудовая деятельность это",
-      "countMax": 595,
-      "countSum": 887,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "заключение эксперта",
-      "normalized": "заключение эксперта",
-      "countMax": 589,
-      "countSum": 1031,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "волгоградский гау",
       "normalized": "волгоградский гау",
       "countMax": 577,
@@ -2006,7 +1597,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -2027,7 +1618,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -2075,7 +1666,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -2097,7 +1688,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -2118,7 +1709,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -2139,7 +1730,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -2181,7 +1772,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -2202,71 +1793,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
-      "commercial": false
-    },
-    {
-      "phrase": "экспертная оценка",
-      "normalized": "экспертная оценка",
-      "countMax": 477,
-      "countSum": 799,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "лабораторные методы исследования",
-      "normalized": "лабораторные методы исследования",
-      "countMax": 473,
-      "countSum": 722,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "ndt_lab",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "ооо инжиниринг",
-      "normalized": "ооо инжиниринг",
-      "countMax": 452,
-      "countSum": 755,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
       "commercial": false
     },
     {
@@ -2286,29 +1814,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "дом архитектора",
-      "normalized": "дом архитектора",
-      "countMax": 418,
-      "countSum": 718,
-      "appearances": 2,
-      "seeds": [
-        "проектирование зданий и сооружений"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -2350,30 +1857,9 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
-    },
-    {
-      "phrase": "что такое себестоимость",
-      "normalized": "что такое себестоимость",
-      "countMax": 374,
-      "countSum": 505,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "commercial",
-      "service": "general",
-      "geo": false,
-      "commercial": true
     },
     {
       "phrase": "волгоградэкспо",
@@ -2394,29 +1880,8 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "экспертное заключение",
-      "normalized": "экспертное заключение",
-      "countMax": 361,
-      "countSum": 597,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "company",
+      "geo": true,
       "commercial": false
     },
     {
@@ -2436,7 +1901,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -2478,30 +1943,9 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
-    },
-    {
-      "phrase": "себестоимость это",
-      "normalized": "себестоимость это",
-      "countMax": 314,
-      "countSum": 499,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "commercial",
-      "service": "general",
-      "geo": false,
-      "commercial": true
     },
     {
       "phrase": "услуги по строительству домов",
@@ -2568,27 +2012,6 @@
       "commercial": false
     },
     {
-      "phrase": "сведения о трудовой деятельности",
-      "normalized": "сведения о трудовой деятельности",
-      "countMax": 289,
-      "countSum": 475,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "инженер проектировщик",
       "normalized": "инженер проектировщик",
       "countMax": 287,
@@ -2597,28 +2020,6 @@
       "seeds": [
         "промышленное проектирование",
         "проектирование инженерных систем"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "анализируй то",
-      "normalized": "анализируй то",
-      "countMax": 276,
-      "countSum": 890,
-      "appearances": 4,
-      "seeds": [
-        "техническое обследование зданий",
-        "инженерно-техническая экспертиза"
       ],
       "regions": [
         "Волгоград",
@@ -2649,7 +2050,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -2668,27 +2069,6 @@
       ],
       "sourceTypes": [
         "result"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "строй и живи",
-      "normalized": "строй и живи",
-      "countMax": 235,
-      "countSum": 349,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
       ],
       "intent": "informational",
       "service": "general",
@@ -2775,7 +2155,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -2845,48 +2225,6 @@
       "commercial": false
     },
     {
-      "phrase": "объект исследования это",
-      "normalized": "объект исследования это",
-      "countMax": 204,
-      "countSum": 337,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "все формулы площадей",
-      "normalized": "все формулы площадей",
-      "countMax": 200,
-      "countSum": 293,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "фбу волгоградский цсм",
       "normalized": "фбу волгоградский цсм",
       "countMax": 192,
@@ -2903,7 +2241,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "company",
       "geo": true,
       "commercial": false
     },
@@ -2924,7 +2262,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -2945,7 +2283,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -2966,7 +2304,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -2987,8 +2325,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "general",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": true
     },
     {
@@ -3013,48 +2351,6 @@
       "commercial": false
     },
     {
-      "phrase": "площадь застройки",
-      "normalized": "площадь застройки",
-      "countMax": 177,
-      "countSum": 316,
-      "appearances": 2,
-      "seeds": [
-        "проектирование промышленных объектов"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "проверка недвижимости",
-      "normalized": "проверка недвижимости",
-      "countMax": 176,
-      "countSum": 291,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проектная и рабочая документация",
       "normalized": "проектная и рабочая документация",
       "countMax": 175,
@@ -3072,7 +2368,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3184,28 +2480,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "уставные документы",
-      "normalized": "уставные документы",
-      "countMax": 156,
-      "countSum": 252,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "capital_repair",
       "geo": false,
       "commercial": false
     },
@@ -3227,7 +2502,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -3269,28 +2544,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "экспертное мнение личный кабинет",
-      "normalized": "экспертное мнение личный кабинет",
-      "countMax": 143,
-      "countSum": 256,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3311,7 +2565,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -3397,7 +2651,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -3418,28 +2672,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "оценка за тест",
-      "normalized": "оценка за тест",
-      "countMax": 130,
-      "countSum": 197,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3460,49 +2693,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "методы ценообразования",
-      "normalized": "методы ценообразования",
-      "countMax": 128,
-      "countSum": 245,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "цена товара это количество",
-      "normalized": "цена товара это количество",
-      "countMax": 128,
-      "countSum": 193,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3523,7 +2714,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -3566,7 +2757,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3608,7 +2799,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -3629,7 +2820,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3650,30 +2841,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "теха",
-      "normalized": "теха",
-      "countMax": 118,
-      "countSum": 164,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "проведение экспертизы проектной документации",
@@ -3692,7 +2862,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -3739,27 +2909,6 @@
       "commercial": false
     },
     {
-      "phrase": "эксперт ра",
-      "normalized": "эксперт ра",
-      "countMax": 111,
-      "countSum": 191,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проектная документация ремонт",
       "normalized": "проектная документация ремонт",
       "countMax": 110,
@@ -3775,7 +2924,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3797,7 +2946,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -3969,51 +3118,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "autodesk revit",
-      "normalized": "autodesk revit",
-      "countMax": 103,
-      "countSum": 183,
-      "appearances": 2,
-      "seeds": [
-        "BIM-моделирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "анализатор состоит из",
-      "normalized": "анализатор состоит из",
-      "countMax": 102,
-      "countSum": 151,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "проект организации строительства",
@@ -4033,10 +3140,10 @@
       "sourceTypes": [
         "association"
       ],
-      "intent": "informational",
+      "intent": "commercial",
       "service": "general",
       "geo": false,
-      "commercial": false
+      "commercial": true
     },
     {
       "phrase": "инжинер или инженер",
@@ -4076,7 +3183,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -4140,28 +3247,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "бюро смэ",
-      "normalized": "бюро смэ",
-      "countMax": 94,
-      "countSum": 157,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4203,28 +3289,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "ценообразование это",
-      "normalized": "ценообразование это",
-      "countMax": 93,
-      "countSum": 133,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4236,27 +3301,6 @@
       "appearances": 2,
       "seeds": [
         "проектирование инженерных систем"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "хочу оценку",
-      "normalized": "хочу оценку",
-      "countMax": 92,
-      "countSum": 134,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
       ],
       "regions": [
         "Волгоград",
@@ -4287,28 +3331,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "экспертное мнение вход",
-      "normalized": "экспертное мнение вход",
-      "countMax": 90,
-      "countSum": 164,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4329,28 +3352,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "фз о специальной оценке условий труда",
-      "normalized": "фз о специальной оценке условий труда",
-      "countMax": 88,
-      "countSum": 138,
-      "appearances": 2,
-      "seeds": [
-        "инженерно-техническая экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -4371,7 +3373,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -4392,28 +3394,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "стройнадзор",
-      "normalized": "стройнадзор",
-      "countMax": 86,
-      "countSum": 154,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4439,27 +3420,6 @@
       "commercial": false
     },
     {
-      "phrase": "стройком",
-      "normalized": "стройком",
-      "countMax": 85,
-      "countSum": 114,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "негосударственная экспертиза",
       "normalized": "негосударственная экспертиза",
       "countMax": 84,
@@ -4476,7 +3436,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -4497,7 +3457,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -4518,28 +3478,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "окончательный анализ",
-      "normalized": "окончательный анализ",
-      "countMax": 82,
-      "countSum": 135,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4560,7 +3499,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4581,7 +3520,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -4602,7 +3541,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -4623,7 +3562,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "capital_repair",
       "geo": false,
       "commercial": false
     },
@@ -4644,7 +3583,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4686,7 +3625,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -4706,7 +3645,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4749,30 +3688,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "калькуляция это",
-      "normalized": "калькуляция это",
-      "countMax": 78,
-      "countSum": 127,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "разделы рабочей документации",
@@ -4852,10 +3770,10 @@
       "sourceTypes": [
         "result"
       ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
+      "intent": "commercial",
+      "service": "company",
+      "geo": true,
+      "commercial": true
     },
     {
       "phrase": "результаты государственной экспертизы проектной документации",
@@ -4874,7 +3792,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -4895,7 +3813,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4915,7 +3833,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -4962,27 +3880,6 @@
       "commercial": true
     },
     {
-      "phrase": "калькулятор ск",
-      "normalized": "калькулятор ск",
-      "countMax": 71,
-      "countSum": 122,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проекты коттеджей",
       "normalized": "проекты коттеджей",
       "countMax": 71,
@@ -5020,7 +3917,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -5061,7 +3958,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -5073,48 +3970,6 @@
       "appearances": 2,
       "seeds": [
         "проектирование зданий и сооружений"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "госстройнадзор",
-      "normalized": "госстройнадзор",
-      "countMax": 65,
-      "countSum": 120,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "инжиниринг это",
-      "normalized": "инжиниринг это",
-      "countMax": 65,
-      "countSum": 103,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
       ],
       "regions": [
         "Волгоград",
@@ -5172,27 +4027,6 @@
       "commercial": false
     },
     {
-      "phrase": "ск строй",
-      "normalized": "ск строй",
-      "countMax": 63,
-      "countSum": 99,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "судебная строительная экспертиза",
       "normalized": "судебная строительная экспертиза",
       "countMax": 63,
@@ -5209,7 +4043,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -5249,27 +4083,6 @@
       ],
       "sourceTypes": [
         "result"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "как считается площадь",
-      "normalized": "как считается площадь",
-      "countMax": 62,
-      "countSum": 113,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
       ],
       "intent": "informational",
       "service": "general",
@@ -5399,7 +4212,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -5432,27 +4245,6 @@
       "appearances": 2,
       "seeds": [
         "промышленное проектирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "строймонтаж",
-      "normalized": "строймонтаж",
-      "countMax": 57,
-      "countSum": 92,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
       ],
       "regions": [
         "Волгоград",
@@ -5504,7 +4296,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -5525,28 +4317,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "какие документы нужны для получения прав",
-      "normalized": "какие документы нужны для получения прав",
-      "countMax": 55,
-      "countSum": 85,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -5587,8 +4358,8 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": false
     },
     {
@@ -5630,8 +4401,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
-      "geo": false,
+      "service": "non_state_expertise",
+      "geo": true,
       "commercial": true
     },
     {
@@ -5648,27 +4419,6 @@
       ],
       "sourceTypes": [
         "result"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "какие документы нужны для трудоустройства",
-      "normalized": "какие документы нужны для трудоустройства",
-      "countMax": 52,
-      "countSum": 88,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
       ],
       "intent": "informational",
       "service": "general",
@@ -5696,27 +4446,6 @@
       "commercial": false
     },
     {
-      "phrase": "работа инженерная система",
-      "normalized": "работа инженерная система",
-      "countMax": 51,
-      "countSum": 91,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "informational",
-      "service": "engineering_systems",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "гост рабочая документация 2020",
       "normalized": "гост рабочая документация 2020",
       "countMax": 50,
@@ -5733,28 +4462,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "сапр это",
-      "normalized": "сапр это",
-      "countMax": 50,
-      "countSum": 92,
-      "appearances": 2,
-      "seeds": [
-        "BIM-моделирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -5775,7 +4483,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -5818,7 +4526,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -5964,7 +4672,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -5985,7 +4693,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "infrastructure",
+      "service": "infrastructure_design",
       "geo": false,
       "commercial": false
     },
@@ -6027,7 +4735,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -6111,28 +4819,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "лабораторная диагностика это",
-      "normalized": "лабораторная диагностика это",
-      "countMax": 38,
-      "countSum": 58,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "ndt_lab",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6153,7 +4840,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -6174,7 +4861,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6195,30 +4882,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "оценщик недвижимости",
-      "normalized": "оценщик недвижимости",
-      "countMax": 37,
-      "countSum": 59,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "акта инженерных систем",
@@ -6258,7 +4924,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -6279,7 +4945,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -6342,7 +5008,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6447,7 +5113,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -6510,7 +5176,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6572,7 +5238,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6594,27 +5260,6 @@
       ],
       "intent": "informational",
       "service": "engineering_systems",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "бизнес модель это",
-      "normalized": "бизнес модель это",
-      "countMax": 33,
-      "countSum": 58,
-      "appearances": 2,
-      "seeds": [
-        "BIM-моделирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
       "geo": false,
       "commercial": false
     },
@@ -6655,7 +5300,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -6697,7 +5342,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -6779,7 +5424,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6800,7 +5445,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -6842,7 +5487,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -6884,7 +5529,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -6905,7 +5550,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -6926,7 +5571,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -6946,10 +5591,10 @@
       "sourceTypes": [
         "result"
       ],
-      "intent": "informational",
-      "service": "project_documentation",
+      "intent": "commercial",
+      "service": "core_design",
       "geo": false,
-      "commercial": false
+      "commercial": true
     },
     {
       "phrase": "гост система рабочей документации",
@@ -7015,27 +5660,6 @@
       "commercial": false
     },
     {
-      "phrase": "1дм сколько см будет",
-      "normalized": "1дм сколько см будет",
-      "countMax": 28,
-      "countSum": 44,
-      "appearances": 2,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "инженерных системы какие",
       "normalized": "инженерных системы какие",
       "countMax": 28,
@@ -7093,7 +5717,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7114,28 +5738,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "реестр экспертов техников",
-      "normalized": "реестр экспертов техников",
-      "countMax": 28,
-      "countSum": 48,
-      "appearances": 2,
-      "seeds": [
-        "инженерно-техническая экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7156,7 +5759,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -7267,27 +5870,6 @@
       "commercial": true
     },
     {
-      "phrase": "акт осмотра помещения",
-      "normalized": "акт осмотра помещения",
-      "countMax": 26,
-      "countSum": 42,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "вентиляция инженерная система",
       "normalized": "вентиляция инженерная система",
       "countMax": 26,
@@ -7325,7 +5907,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7347,7 +5929,7 @@
       ],
       "intent": "informational",
       "service": "engineering_systems",
-      "geo": false,
+      "geo": true,
       "commercial": false
     },
     {
@@ -7367,7 +5949,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -7388,7 +5970,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -7409,7 +5991,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -7430,7 +6012,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7518,27 +6100,6 @@
       "commercial": false
     },
     {
-      "phrase": "промзона это",
-      "normalized": "промзона это",
-      "countMax": 25,
-      "countSum": 46,
-      "appearances": 2,
-      "seeds": [
-        "проектирование промышленных объектов"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "расчет огнестойкости конструкций",
       "normalized": "расчет огнестойкости конструкций",
       "countMax": 25,
@@ -7618,7 +6179,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7660,7 +6221,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "engineering_systems",
       "geo": false,
       "commercial": false
     },
@@ -7785,7 +6346,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -7827,7 +6388,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -7896,27 +6457,6 @@
       "commercial": false
     },
     {
-      "phrase": "лучевая диагностика это",
-      "normalized": "лучевая диагностика это",
-      "countMax": 22,
-      "countSum": 37,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "пм 01 проектирование зданий и сооружений",
       "normalized": "пм 01 проектирование зданий и сооружений",
       "countMax": 22,
@@ -7932,7 +6472,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -7953,7 +6493,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -7995,7 +6535,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8079,7 +6619,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8142,7 +6682,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -8163,7 +6703,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8184,7 +6724,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -8205,7 +6745,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -8230,27 +6770,6 @@
       "commercial": false
     },
     {
-      "phrase": "инженю это",
-      "normalized": "инженю это",
-      "countMax": 20,
-      "countSum": 29,
-      "appearances": 2,
-      "seeds": [
-        "инженерные системы"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "независимая строительная экспертиза",
       "normalized": "независимая строительная экспертиза",
       "countMax": 20,
@@ -8267,30 +6786,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "ооо строймонтаж",
-      "normalized": "ооо строймонтаж",
-      "countMax": 20,
-      "countSum": 31,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "проэкт или проект как правильно",
@@ -8352,7 +6850,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -8435,7 +6933,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -8455,7 +6953,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8539,7 +7037,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -8581,7 +7079,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8623,7 +7121,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -8726,7 +7224,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "structural_calculation",
       "geo": false,
       "commercial": false
     },
@@ -8747,7 +7245,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8767,7 +7265,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -8793,28 +7291,6 @@
       "commercial": false
     },
     {
-      "phrase": "цель применения технологии проектной деятельности состоит в",
-      "normalized": "цель применения технологии проектной деятельности состоит в",
-      "countMax": 18,
-      "countSum": 54,
-      "appearances": 4,
-      "seeds": [
-        "проектирование промышленных объектов",
-        "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "экспертиза строительных работ",
       "normalized": "экспертиза строительных работ",
       "countMax": 18,
@@ -8831,7 +7307,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -8900,27 +7376,6 @@
       "commercial": false
     },
     {
-      "phrase": "нтц эксперт",
-      "normalized": "нтц эксперт",
-      "countMax": 17,
-      "countSum": 26,
-      "appearances": 2,
-      "seeds": [
-        "инженерно-техническая экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "обследование технического состояния конструкций здания",
       "normalized": "обследование технического состояния конструкций здания",
       "countMax": 17,
@@ -8937,7 +7392,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -8958,30 +7413,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "осмотритесь внутри дома nte",
-      "normalized": "осмотритесь внутри дома nte",
-      "countMax": 17,
-      "countSum": 32,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "пожарная инженерная система",
@@ -9004,27 +7438,6 @@
       "commercial": false
     },
     {
-      "phrase": "принципы построения и редактирования трехмерных моделей",
-      "normalized": "принципы построения и редактирования трехмерных моделей",
-      "countMax": 17,
-      "countSum": 18,
-      "appearances": 2,
-      "seeds": [
-        "BIM-моделирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проектная строительная экспертиза",
       "normalized": "проектная строительная экспертиза",
       "countMax": 17,
@@ -9041,30 +7454,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "реестр организаций проводящих специальную оценку условий труда",
-      "normalized": "реестр организаций проводящих специальную оценку условий труда",
-      "countMax": 17,
-      "countSum": 28,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "российские инженерные системы",
@@ -9104,7 +7496,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -9125,7 +7517,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -9146,7 +7538,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -9167,7 +7559,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -9188,7 +7580,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -9213,49 +7605,6 @@
       "commercial": false
     },
     {
-      "phrase": "уставные документы это",
-      "normalized": "уставные документы это",
-      "countMax": 17,
-      "countSum": 29,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "фз об экспертной деятельности",
-      "normalized": "фз об экспертной деятельности",
-      "countMax": 17,
-      "countSum": 64,
-      "appearances": 4,
-      "seeds": [
-        "негосударственная экспертиза",
-        "инженерно-техническая экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "эксперт по строительной экспертизе",
       "normalized": "эксперт по строительной экспертизе",
       "countMax": 17,
@@ -9272,7 +7621,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -9293,7 +7642,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -9356,7 +7705,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -9502,7 +7851,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -9523,7 +7872,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -9544,28 +7893,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "технадзор это",
-      "normalized": "технадзор это",
-      "countMax": 16,
-      "countSum": 29,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -9612,27 +7940,6 @@
       "commercial": false
     },
     {
-      "phrase": "планировка дома 6х6",
-      "normalized": "планировка дома 6х6",
-      "countMax": 15,
-      "countSum": 24,
-      "appearances": 2,
-      "seeds": [
-        "проектирование зданий и сооружений"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проект инженерных систем",
       "normalized": "проект инженерных систем",
       "countMax": 15,
@@ -9670,7 +7977,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -9712,7 +8019,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -9734,7 +8041,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -9820,28 +8127,6 @@
       "commercial": false
     },
     {
-      "phrase": "площадь застройки это",
-      "normalized": "площадь застройки это",
-      "countMax": 14,
-      "countSum": 50,
-      "appearances": 4,
-      "seeds": [
-        "проектирование промышленных объектов",
-        "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "проектирование промышленного строительства",
       "normalized": "проектирование промышленного строительства",
       "countMax": 14,
@@ -9903,48 +8188,6 @@
       "commercial": false
     },
     {
-      "phrase": "строй эксперт",
-      "normalized": "строй эксперт",
-      "countMax": 14,
-      "countSum": 23,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "стройэксперт",
-      "normalized": "стройэксперт",
-      "countMax": 14,
-      "countSum": 25,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "вентиляция отопление инженерные системы",
       "normalized": "вентиляция отопление инженерные системы",
       "countMax": 13,
@@ -9981,7 +8224,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10001,7 +8244,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "engineering_systems",
       "geo": false,
       "commercial": false
     },
@@ -10041,7 +8284,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10082,7 +8325,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10103,30 +8346,9 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
-    },
-    {
-      "phrase": "проектирование зданий и сооружений работа",
-      "normalized": "проектирование зданий и сооружений работа",
-      "countMax": 13,
-      "countSum": 19,
-      "appearances": 2,
-      "seeds": [
-        "проектирование зданий и сооружений"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "commercial",
-      "service": "building_design",
-      "geo": false,
-      "commercial": true
     },
     {
       "phrase": "проектировании и эксплуатации зданий и сооружений",
@@ -10145,7 +8367,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10187,7 +8409,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10208,7 +8430,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10229,7 +8451,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -10250,7 +8472,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -10316,27 +8538,6 @@
       "commercial": false
     },
     {
-      "phrase": "кто возглавляет экспертную группу",
-      "normalized": "кто возглавляет экспертную группу",
-      "countMax": 12,
-      "countSum": 19,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "обслуживание инженерные системы зданий",
       "normalized": "обслуживание инженерные системы зданий",
       "countMax": 12,
@@ -10352,7 +8553,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10373,28 +8574,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "ооо стройком",
-      "normalized": "ооо стройком",
-      "countMax": 12,
-      "countSum": 18,
-      "appearances": 2,
-      "seeds": [
-        "строительный консалтинг"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -10435,8 +8615,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "general",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": true
     },
     {
@@ -10456,7 +8636,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -10477,7 +8657,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10498,7 +8678,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "structural_calculation",
       "geo": false,
       "commercial": false
     },
@@ -10519,7 +8699,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10540,7 +8720,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10561,7 +8741,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -10581,7 +8761,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10601,10 +8781,10 @@
       "sourceTypes": [
         "result"
       ],
-      "intent": "informational",
-      "service": "construction_expertise",
+      "intent": "commercial",
+      "service": "non_state_expertise",
       "geo": false,
-      "commercial": false
+      "commercial": true
     },
     {
       "phrase": "участие в проектировании зданий и сооружений",
@@ -10622,7 +8802,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -10643,7 +8823,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10664,7 +8844,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10685,7 +8865,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10706,7 +8886,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -10748,7 +8928,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -10768,7 +8948,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10789,7 +8969,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -10810,7 +8990,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -10831,7 +9011,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -10851,10 +9031,10 @@
       "sourceTypes": [
         "association"
       ],
-      "intent": "informational",
+      "intent": "commercial",
       "service": "general",
       "geo": false,
-      "commercial": false
+      "commercial": true
     },
     {
       "phrase": "проектирование промышленная безопасность",
@@ -10894,7 +9074,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -10978,7 +9158,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -11000,8 +9180,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
-      "geo": false,
+      "service": "non_state_expertise",
+      "geo": true,
       "commercial": true
     },
     {
@@ -11020,7 +9200,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -11062,7 +9242,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -11103,7 +9283,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -11124,7 +9304,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11145,7 +9325,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11166,7 +9346,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -11208,7 +9388,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -11229,7 +9409,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11270,7 +9450,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -11354,7 +9534,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -11375,7 +9555,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11437,7 +9617,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11478,7 +9658,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -11498,30 +9678,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "чертежи для 3d моделирования",
-      "normalized": "чертежи для 3d моделирования",
-      "countMax": 10,
-      "countSum": 20,
-      "appearances": 2,
-      "seeds": [
-        "BIM-проектирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "bim",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "экспертиза строительных материалов",
@@ -11540,30 +9699,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "эмпирическая база исследования это",
-      "normalized": "эмпирическая база исследования это",
-      "countMax": 10,
-      "countSum": 20,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "qa инженер кто это",
@@ -11603,7 +9741,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -11623,7 +9761,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -11685,7 +9823,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -11706,7 +9844,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -11727,8 +9865,8 @@
         "result"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": false
     },
     {
@@ -11769,7 +9907,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11790,7 +9928,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11811,7 +9949,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -11852,7 +9990,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "structural_calculation",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -11934,7 +10072,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11976,7 +10114,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -11996,7 +10134,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12017,7 +10155,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12037,7 +10175,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12057,7 +10195,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12077,7 +10215,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12098,7 +10236,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -12119,30 +10257,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "укд это что за документ",
-      "normalized": "укд это что за документ",
-      "countMax": 9,
-      "countSum": 17,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "услуга техническое обследование зданий",
@@ -12160,7 +10277,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -12180,7 +10297,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -12200,7 +10317,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12221,7 +10338,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12242,7 +10359,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -12263,30 +10380,9 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "ао аналитический центр",
-      "normalized": "ао аналитический центр",
-      "countMax": 8,
-      "countSum": 15,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "бим моделирование",
@@ -12305,7 +10401,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -12326,7 +10422,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -12367,28 +10463,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "м п в документах что это",
-      "normalized": "м п в документах что это",
-      "countMax": 8,
-      "countSum": 11,
-      "appearances": 2,
-      "seeds": [
-        "рабочая документация"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -12409,29 +10484,8 @@
         "result"
       ],
       "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "мотор эксперт",
-      "normalized": "мотор эксперт",
-      "countMax": 8,
-      "countSum": 12,
-      "appearances": 2,
-      "seeds": [
-        "инженерно-техническая экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": false
     },
     {
@@ -12450,7 +10504,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -12513,7 +10567,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -12576,7 +10630,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "project_documentation",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -12638,7 +10692,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12658,7 +10712,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12678,7 +10732,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -12741,7 +10795,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -12782,7 +10836,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -12803,7 +10857,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -12824,7 +10878,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -12908,27 +10962,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
-      "geo": false,
-      "commercial": true
-    },
-    {
-      "phrase": "проектирование зданий и сооружений скачать",
-      "normalized": "проектирование зданий и сооружений скачать",
-      "countMax": 7,
-      "countSum": 7,
-      "appearances": 1,
-      "seeds": [
-        "проектирование зданий и сооружений"
-      ],
-      "regions": [
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -12970,7 +11004,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -12991,7 +11025,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -13115,7 +11149,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13135,7 +11169,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13175,7 +11209,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13196,7 +11230,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13238,7 +11272,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -13259,7 +11293,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -13301,7 +11335,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -13321,7 +11355,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13341,7 +11375,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13361,7 +11395,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13382,7 +11416,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -13403,7 +11437,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13424,7 +11458,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -13445,7 +11479,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13465,7 +11499,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13486,7 +11520,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -13507,7 +11541,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13528,7 +11562,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13549,7 +11583,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13591,7 +11625,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -13652,7 +11686,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13672,7 +11706,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13775,7 +11809,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -13796,7 +11830,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -13817,7 +11851,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -13838,49 +11872,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "engineering_systems",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "коагулограмма что входит в этот анализ",
-      "normalized": "коагулограмма что входит в этот анализ",
-      "countMax": 5,
-      "countSum": 8,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "коалуграмма анализ что это такое",
-      "normalized": "коалуграмма анализ что это такое",
-      "countMax": 5,
-      "countSum": 8,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -13901,7 +11893,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -13922,7 +11914,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -13943,7 +11935,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -13964,7 +11956,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -14005,7 +11997,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14026,7 +12018,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "capital_repair",
       "geo": false,
       "commercial": false
     },
@@ -14047,7 +12039,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -14068,30 +12060,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "ооо стройэксперт",
-      "normalized": "ооо стройэксперт",
-      "countMax": 5,
-      "countSum": 7,
-      "appearances": 2,
-      "seeds": [
-        "строительная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "правила аттестация лаборатории неразрушающего контроля",
@@ -14110,7 +12081,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -14131,7 +12102,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14192,7 +12163,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -14213,7 +12184,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14234,7 +12205,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14255,7 +12226,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14276,7 +12247,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14297,7 +12268,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14339,7 +12310,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14420,7 +12391,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -14441,7 +12412,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14462,7 +12433,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14483,7 +12454,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14504,7 +12475,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14525,7 +12496,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14546,7 +12517,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14627,7 +12598,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14648,7 +12619,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -14689,7 +12660,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14710,7 +12681,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14730,7 +12701,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14752,28 +12723,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "благоустройство территории что входит в это понятие",
-      "normalized": "благоустройство территории что входит в это понятие",
-      "countMax": 4,
-      "countSum": 7,
-      "appearances": 2,
-      "seeds": [
-        "проектирование объектов инфраструктуры"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14794,7 +12744,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -14815,7 +12765,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -14836,7 +12786,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14857,7 +12807,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -14878,8 +12828,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
-      "geo": false,
+      "service": "non_state_expertise",
+      "geo": true,
       "commercial": true
     },
     {
@@ -14899,7 +12849,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -14920,7 +12870,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14941,28 +12891,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "оценщик ру",
-      "normalized": "оценщик ру",
-      "countMax": 4,
-      "countSum": 7,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -14983,7 +12912,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -15004,7 +12933,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -15024,7 +12953,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15045,7 +12974,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15107,7 +13036,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15149,7 +13078,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -15191,7 +13120,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15232,7 +13161,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15252,7 +13181,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15272,7 +13201,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15293,7 +13222,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -15313,7 +13242,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15334,49 +13263,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "центр диагностики и профилактики",
-      "normalized": "центр диагностики и профилактики",
-      "countMax": 4,
-      "countSum": 8,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "центр лабораторной диагностики",
-      "normalized": "центр лабораторной диагностики",
-      "countMax": 4,
-      "countSum": 6,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "ndt_lab",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15397,7 +13284,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -15439,7 +13326,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15460,7 +13347,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15481,7 +13368,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15502,7 +13389,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15522,7 +13409,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15542,7 +13429,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -15563,7 +13450,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15584,7 +13471,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -15605,7 +13492,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -15626,7 +13513,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -15647,7 +13534,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -15668,7 +13555,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -15710,7 +13597,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -15730,7 +13617,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -15751,7 +13638,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -15772,7 +13659,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "sports",
+      "service": "sport_design",
       "geo": false,
       "commercial": false
     },
@@ -15793,7 +13680,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -15813,7 +13700,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -15833,7 +13720,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15853,7 +13740,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -15873,7 +13760,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -15894,7 +13781,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -15915,7 +13802,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -15956,7 +13843,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -15997,7 +13884,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16018,7 +13905,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16039,7 +13926,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -16124,7 +14011,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16166,7 +14053,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16187,7 +14074,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16208,7 +14095,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16229,7 +14116,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16238,27 +14125,6 @@
       "normalized": "проектирование промышленных дорог",
       "countMax": 3,
       "countSum": 6,
-      "appearances": 2,
-      "seeds": [
-        "промышленное проектирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "commercial",
-      "service": "industrial_design",
-      "geo": false,
-      "commercial": true
-    },
-    {
-      "phrase": "проектирование промышленных зданий курсовая",
-      "normalized": "проектирование промышленных зданий курсовая",
-      "countMax": 3,
-      "countSum": 4,
       "appearances": 2,
       "seeds": [
         "промышленное проектирование"
@@ -16376,7 +14242,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16502,7 +14368,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -16522,7 +14388,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -16564,7 +14430,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16584,7 +14450,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -16604,7 +14470,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16625,7 +14491,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16645,7 +14511,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16666,7 +14532,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -16709,7 +14575,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -16729,7 +14595,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16749,7 +14615,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16770,8 +14636,8 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "general",
-      "geo": false,
+      "service": "core_design",
+      "geo": true,
       "commercial": true
     },
     {
@@ -16790,7 +14656,7 @@
         "association"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -16812,7 +14678,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16833,7 +14699,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -16875,7 +14741,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16896,7 +14762,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -16917,7 +14783,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -16938,7 +14804,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -16959,7 +14825,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -16980,7 +14846,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -17001,7 +14867,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17022,7 +14888,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17043,7 +14909,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17064,7 +14930,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17085,7 +14951,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17126,7 +14992,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17147,7 +15013,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17168,7 +15034,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17189,7 +15055,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17210,7 +15076,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17231,7 +15097,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17252,7 +15118,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17273,7 +15139,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -17294,7 +15160,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17336,7 +15202,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -17356,7 +15222,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -17377,7 +15243,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -17398,7 +15264,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -17418,7 +15284,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17439,7 +15305,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -17459,7 +15325,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -17480,7 +15346,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -17501,7 +15367,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -17522,7 +15388,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -17543,7 +15409,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -17564,7 +15430,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -17585,7 +15451,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -17605,7 +15471,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -17625,7 +15491,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17645,7 +15511,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17665,7 +15531,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17685,7 +15551,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17706,7 +15572,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17727,7 +15593,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17748,7 +15614,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17769,7 +15635,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17789,7 +15655,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -17935,7 +15801,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18000,27 +15866,6 @@
       "commercial": true
     },
     {
-      "phrase": "работа негосударственной экспертизы",
-      "normalized": "работа негосударственной экспертизы",
-      "countMax": 2,
-      "countSum": 4,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "informational",
-      "service": "construction_expertise",
-      "geo": false,
-      "commercial": false
-    },
-    {
       "phrase": "результаты негосударственной экспертизы",
       "normalized": "результаты негосударственной экспертизы",
       "countMax": 2,
@@ -18036,7 +15881,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": false
     },
@@ -18057,7 +15902,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18098,7 +15943,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "construction_expertise",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -18159,7 +16004,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18179,7 +16024,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -18199,7 +16044,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "technical_inspection",
+      "service": "technical_survey",
       "geo": false,
       "commercial": true
     },
@@ -18239,7 +16084,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18260,7 +16105,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -18281,7 +16126,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18302,7 +16147,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -18323,28 +16168,7 @@
         "association"
       ],
       "intent": "informational",
-      "service": "bim",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "бронхоскопия диагностическая что это и как проходит",
-      "normalized": "бронхоскопия диагностическая что это и как проходит",
-      "countMax": 1,
-      "countSum": 2,
-      "appearances": 2,
-      "seeds": [
-        "техническое обследование зданий"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -18385,7 +16209,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "technical_survey",
       "geo": false,
       "commercial": false
     },
@@ -18405,7 +16229,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18425,7 +16249,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -18445,7 +16269,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -18466,7 +16290,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18487,7 +16311,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18528,7 +16352,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18569,7 +16393,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18590,7 +16414,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18611,7 +16435,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18631,7 +16455,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18651,7 +16475,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": true
     },
@@ -18692,7 +16516,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18713,7 +16537,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18733,7 +16557,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18754,7 +16578,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18795,7 +16619,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18816,7 +16640,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "building_design",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18856,7 +16680,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18877,28 +16701,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
-      "geo": false,
-      "commercial": true
-    },
-    {
-      "phrase": "работа bim проектирование",
-      "normalized": "работа bim проектирование",
-      "countMax": 1,
-      "countSum": 2,
-      "appearances": 2,
-      "seeds": [
-        "BIM-проектирование"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "result"
-      ],
-      "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -18918,7 +16721,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -18938,28 +16741,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "building_design",
-      "geo": false,
-      "commercial": false
-    },
-    {
-      "phrase": "серологические исследования что это такое",
-      "normalized": "серологические исследования что это такое",
-      "countMax": 1,
-      "countSum": 2,
-      "appearances": 2,
-      "seeds": [
-        "лаборатория неразрушающего контроля"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -18980,7 +16762,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "ndt_lab",
+      "service": "ndt_laboratory",
       "geo": false,
       "commercial": false
     },
@@ -19000,7 +16782,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "engineering_systems",
+      "service": "non_state_expertise",
       "geo": false,
       "commercial": true
     },
@@ -19104,30 +16886,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "экспертное мнение ру",
-      "normalized": "экспертное мнение ру",
-      "countMax": 1,
-      "countSum": 2,
-      "appearances": 2,
-      "seeds": [
-        "негосударственная экспертиза"
-      ],
-      "regions": [
-        "Волгоград",
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "bim моделирование в строительстве",
@@ -19146,7 +16907,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },
@@ -19167,7 +16928,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -19188,7 +16949,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -19209,7 +16970,7 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -19230,7 +16991,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
     },
@@ -19251,29 +17012,9 @@
         "result"
       ],
       "intent": "commercial",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": true
-    },
-    {
-      "phrase": "npv что это такое и как рассчитать",
-      "normalized": "npv что это такое и как рассчитать",
-      "countMax": 1,
-      "countSum": 1,
-      "appearances": 1,
-      "seeds": [
-        "расчет конструкций"
-      ],
-      "regions": [
-        "Волгоградская область"
-      ],
-      "sourceTypes": [
-        "association"
-      ],
-      "intent": "informational",
-      "service": "general",
-      "geo": false,
-      "commercial": false
     },
     {
       "phrase": "revit bim проектирования",
@@ -19291,7 +17032,7 @@
         "result"
       ],
       "intent": "informational",
-      "service": "bim",
+      "service": "core_design",
       "geo": false,
       "commercial": false
     },

@@ -1,5 +1,184 @@
 (function () {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const metrikaCounterId = 109573051;
+
+  function initMetrikaCounter() {
+    if (!metrikaCounterId || typeof window === 'undefined' || window.__allnrgMetrikaLoaded) return;
+    window.__allnrgMetrikaLoaded = true;
+
+    window.ym = window.ym || function () {
+      (window.ym.a = window.ym.a || []).push(arguments);
+    };
+    window.ym.l = window.ym.l || Number(new Date());
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://mc.yandex.ru/metrika/tag.js';
+    const firstScript = document.getElementsByTagName('script')[0];
+    if (firstScript && firstScript.parentNode) {
+      firstScript.parentNode.insertBefore(script, firstScript);
+    } else {
+      document.head.appendChild(script);
+    }
+
+    window.ym(metrikaCounterId, 'init', {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  }
+
+  function reachMetrikaGoal(goal, params) {
+    if (!goal || typeof window.ym !== 'function') return;
+
+    try {
+      window.ym(metrikaCounterId, 'reachGoal', goal, params || {});
+    } catch (error) {
+      // Analytics must never block the visible site behavior.
+    }
+  }
+
+  function initMetrikaGoals() {
+    let lastFormGoal = 'ae_form_request_success';
+    const sentAt = Object.create(null);
+
+    function sendOnce(goal, params) {
+      const now = Date.now();
+      if (sentAt[goal] && now - sentAt[goal] < 800) return;
+      sentAt[goal] = now;
+      reachMetrikaGoal(goal, params);
+    }
+
+    function inferFormGoal(form) {
+      if (!(form instanceof HTMLFormElement)) return 'ae_form_request_success';
+
+      const subject = form.querySelector('input[name="subject"], input[name="from_name"]');
+      const submit = form.querySelector('button[type="submit"], input[type="submit"]');
+      const text = [
+        form.id,
+        form.className,
+        subject && subject.value,
+        submit && (submit.textContent || submit.value)
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      if (/тендер|участ/.test(text)) return 'ae_form_tender_success';
+      if (/расч/.test(text)) return 'ae_form_calc_success';
+      if (/звон|callback|call/.test(text)) return 'ae_form_callback_success';
+      return 'ae_form_request_success';
+    }
+
+    document.addEventListener('click', function (event) {
+      const contactLink = event.target.closest('a[href]');
+      if (contactLink) {
+        const href = (contactLink.getAttribute('href') || '').toLowerCase();
+        if (href.startsWith('tel:')) sendOnce('ae_click_phone', { href: href });
+        else if (href.startsWith('mailto:')) sendOnce('ae_click_email', { href: href });
+        else if (href.includes('t.me/') || href.includes('telegram')) sendOnce('ae_click_telegram', { href: href });
+        else if (href.includes('wa.me/') || href.includes('whatsapp')) sendOnce('ae_click_whatsapp', { href: href });
+        else if (href.includes('max.ru/')) sendOnce('ae_click_max', { href: href });
+      }
+
+      const orderButton = event.target.closest('.btn-order, .hmob__btn--light, .mhero__btn--secondary');
+      if (!orderButton) return;
+
+      const label = (orderButton.textContent || '').toLowerCase();
+      if (label.includes('заказать проект')) {
+        sendOnce('ae_open_contact_modal', { label: label.trim() });
+      }
+    }, true);
+
+    document.addEventListener('submit', function (event) {
+      lastFormGoal = inferFormGoal(event.target);
+    }, true);
+
+    if (typeof window.fetch === 'function' && !window.fetch.__allnrgMetrikaWrapped) {
+      const originalFetch = window.fetch.bind(window);
+      const wrappedFetch = function () {
+        const request = arguments[0];
+        const requestUrl = typeof request === 'string' ? request : (request && request.url) || '';
+        return originalFetch.apply(null, arguments).then(function (response) {
+          if (!String(requestUrl).includes('api.web3forms.com/submit')) return response;
+
+          response.clone().json().then(function (data) {
+            if (response.ok && (!data || data.success !== false)) {
+              sendOnce(lastFormGoal || 'ae_form_request_success', { source: 'web3forms' });
+              if (lastFormGoal !== 'ae_form_request_success') {
+                sendOnce('ae_form_request_success', { source: 'web3forms' });
+              }
+            }
+          }).catch(function () {
+            if (response.ok) sendOnce(lastFormGoal || 'ae_form_request_success', { source: 'web3forms' });
+          });
+
+          return response;
+        });
+      };
+
+      wrappedFetch.__allnrgMetrikaWrapped = true;
+      window.fetch = wrappedFetch;
+    }
+  }
+
+  function initPersonalDataConsent() {
+    const policyUrl = '/obrabotka-pers-dannih/';
+    const consentMessage = '\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435 \u043d\u0430 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0443 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445.';
+
+    document.querySelectorAll('form').forEach(function (form) {
+      let consent = form.querySelector('input[name="personal_data_consent"]');
+
+      form.querySelectorAll('a[href="#"], a[href="/privacy/"]').forEach(function (link) {
+        link.setAttribute('href', policyUrl);
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener');
+      });
+
+      if (!consent) {
+        const note = form.querySelector('.note, .agree, .axm__note, .cb-note, .calcx-agree, .expsT__note, .cbT__note, .calcx-mob__agree, .axmM__note, .cbM__note');
+        if (note) {
+          const label = document.createElement('label');
+          label.className = (note.className || '') + ' consent-check';
+
+          consent = document.createElement('input');
+          consent.className = 'consent-check__input';
+          consent.type = 'checkbox';
+          consent.name = 'personal_data_consent';
+          consent.value = 'yes';
+          consent.required = true;
+          consent.setAttribute('aria-required', 'true');
+
+          const text = document.createElement('span');
+          text.className = 'consent-check__text';
+          while (note.firstChild) text.appendChild(note.firstChild);
+
+          label.appendChild(consent);
+          label.appendChild(text);
+          note.replaceWith(label);
+        }
+      }
+
+      if (consent) {
+        consent.required = true;
+        consent.setAttribute('aria-required', 'true');
+        consent.addEventListener('change', function () {
+          consent.setCustomValidity('');
+        });
+      }
+    });
+
+    document.addEventListener('submit', function (event) {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement)) return;
+
+      const consent = form.querySelector('input[name="personal_data_consent"]');
+      if (!consent || consent.checked) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      consent.setCustomValidity(consentMessage);
+      consent.reportValidity();
+    }, true);
+  }
 
   function initLenis() {
     if (reduceMotion || !window.Lenis) return;
@@ -332,6 +511,74 @@
     });
   }
 
+  function initFooterTyping() {
+    const titles = Array.from(document.querySelectorAll('.footer-video-title'));
+    if (!titles.length) return;
+
+    const phrases = [
+      'Понравился сайт?',
+      'Хотите такой же?',
+      'Сделаем под ваш бюджет.'
+    ];
+    const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function setupTitle(title) {
+      if (!(title instanceof HTMLElement) || title.dataset.typingReady === '1') return;
+
+      title.dataset.typingReady = '1';
+      title.classList.add('footer-typing-title');
+      title.setAttribute('aria-label', 'Понравился сайт? Хотите такой же? Сделаем под ваш бюджет.');
+
+      const text = document.createElement('span');
+      text.className = 'footer-typing-text';
+      text.setAttribute('aria-hidden', 'true');
+      title.replaceChildren(text);
+
+      if (reduceMotionQuery.matches) {
+        text.textContent = phrases[2];
+        return;
+      }
+
+      let phraseIndex = 0;
+      let characterIndex = 0;
+      let deleting = false;
+
+      function tick() {
+        const phrase = phrases[phraseIndex];
+
+        if (!deleting) {
+          characterIndex += 1;
+          text.textContent = phrase.slice(0, characterIndex);
+
+          if (characterIndex === phrase.length) {
+            deleting = true;
+            window.setTimeout(tick, phraseIndex === phrases.length - 1 ? 2600 : 1700);
+            return;
+          }
+
+          window.setTimeout(tick, 68);
+          return;
+        }
+
+        characterIndex -= 1;
+        text.textContent = phrase.slice(0, characterIndex);
+
+        if (characterIndex === 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          window.setTimeout(tick, 420);
+          return;
+        }
+
+        window.setTimeout(tick, 38);
+      }
+
+      window.setTimeout(tick, 450);
+    }
+
+    titles.forEach(setupTitle);
+  }
+
   function initStableMobileHero() {
     const text = document.querySelector('.mhero__text');
     if (!text) return;
@@ -580,6 +827,151 @@
     });
   }
 
+  function initCookieConsentBanner() {
+    const LS_KEY_ACCEPT = 'ckAccepted';
+    const LS_KEY_PREFS = 'ckPrefs';
+    const LS_KEY_SHOWN = 'ckPromptShown';
+
+    if (!document.getElementById('ck-global-critical-styles')) {
+      const style = document.createElement('style');
+      style.id = 'ck-global-critical-styles';
+      style.textContent = [
+        '.ck-banner{position:fixed!important;left:50%!important;bottom:24px!important;transform:translate3d(-50%,40px,0)!important;width:min(1200px,calc(100% - 32px))!important;box-sizing:border-box!important;padding:24px 32px 20px!important;background:#363636!important;color:#fff!important;font-family:Montserrat,Arial,sans-serif!important;box-shadow:0 14px 40px rgba(0,0,0,.45)!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;z-index:2147483646!important}',
+        '.ck-banner.ck-banner--show{transform:translate3d(-50%,0,0)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important}',
+        '.ck-banner__inner{display:flex!important;flex-direction:column!important;gap:20px!important}',
+        '.ck-banner__title{margin:0 0 10px!important;color:#e4e35a!important;font-size:18px!important}',
+        '.ck-banner__text{margin:0!important;color:#e5e5e5!important;font-size:13px!important;line-height:1.5!important}',
+        '.ck-banner__btns,.ck-modal__btns{display:flex!important;justify-content:flex-end!important;gap:14px!important;flex-wrap:wrap!important}',
+        '.ck-btn{min-width:170px!important;padding:10px 22px!important;border:1px solid #e4e35a!important;background:transparent!important;color:#e4e35a!important;font:600 13px/1.2 Montserrat,Arial,sans-serif!important;cursor:pointer!important}',
+        '.ck-btn--yellow{background:#e4e35a!important;color:#000!important}',
+        '.ck-modal{position:fixed!important;inset:0!important;display:none!important;align-items:center!important;justify-content:center!important;z-index:2147483647!important;font-family:Montserrat,Arial,sans-serif!important}',
+        '.ck-modal.ck-modal--open{display:flex!important}',
+        '.ck-modal__backdrop{position:absolute!important;inset:0!important;background:rgba(0,0,0,.55)!important}',
+        '.ck-modal__dialog{position:relative!important;z-index:1!important;width:min(620px,calc(100% - 32px))!important;max-height:calc(100dvh - 32px)!important;overflow:auto!important;box-sizing:border-box!important;padding:24px!important;background:#2b2b2b!important;color:#fff!important}',
+        '.ck-modal__title{margin:0 0 10px!important;color:#e4e35a!important;font-size:18px!important}',
+        '.ck-modal__intro{margin:0 0 18px!important;color:#e5e5e5!important;font-size:13px!important;line-height:1.5!important}',
+        '.ck-modal__group{display:flex!important;align-items:flex-start!important;gap:12px!important;margin-bottom:14px!important}',
+        '.ck-modal__group-text{flex:1 1 auto!important}.ck-modal__group-title{margin-bottom:4px!important;font-size:14px!important;font-weight:600!important}.ck-modal__group-desc{color:#d0d0d0!important;font-size:12px!important;line-height:1.45!important}',
+        '.ck-switch{position:relative!important;display:inline-block!important;flex:0 0 auto!important;width:36px!important;height:20px!important}.ck-switch input{width:0!important;height:0!important;opacity:0!important}.ck-switch__slider{position:absolute!important;inset:0!important;border-radius:10px!important;background:#555!important}.ck-switch__slider:before{content:""!important;position:absolute!important;top:3px!important;left:3px!important;width:14px!important;height:14px!important;border-radius:50%!important;background:#f1f1f1!important}.ck-switch input:checked+.ck-switch__slider{background:#e4e35a!important}.ck-switch input:checked+.ck-switch__slider:before{transform:translateX(16px)!important}',
+        '@media(max-width:600px){.ck-banner{bottom:12px!important;width:calc(100% - 24px)!important;padding:18px!important}.ck-banner__btns,.ck-modal__btns{flex-direction:column!important}.ck-btn{width:100%!important}}'
+      ].join('');
+      document.head.appendChild(style);
+    }
+
+    let banner = document.getElementById('ck-banner');
+    let modal = document.getElementById('ck-modal');
+
+    if (!banner || !modal) {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = [
+        '<div class="ck-banner" id="ck-banner">',
+        '  <div class="ck-banner__inner">',
+        '    <div class="ck-banner__text-wrap">',
+        '      <h3 class="ck-banner__title">Помогаем сделать сайт удобнее</h3>',
+        '      <p class="ck-banner__text">Мы используем файлы cookie, чтобы сайт работал стабильно, быстрее открывался и помогал понять, какие разделы стоит улучшить. Вы можете принять все cookie или настроить использование по своему желанию.</p>',
+        '    </div>',
+        '    <div class="ck-banner__btns">',
+        '      <button class="ck-btn ck-btn--outline" type="button" id="ck-open-settings">Настроить</button>',
+        '      <button class="ck-btn ck-btn--yellow" type="button" id="ck-accept-all">Принять все</button>',
+        '    </div>',
+        '  </div>',
+        '</div>',
+        '<div class="ck-modal" id="ck-modal">',
+        '  <div class="ck-modal__backdrop"></div>',
+        '  <div class="ck-modal__dialog">',
+        '    <h3 class="ck-modal__title">Выберите, какие cookie разрешить</h3>',
+        '    <p class="ck-modal__intro">Обязательные cookie нужны для работы сайта и включены всегда. Остальные помогают улучшать сайт; личные данные и пароли в cookie мы не сохраняем.</p>',
+        '    <div class="ck-modal__group ck-modal__group--locked">',
+        '      <label class="ck-switch"><input type="checkbox" checked disabled><span class="ck-switch__slider"></span></label>',
+        '      <div class="ck-modal__group-text"><div class="ck-modal__group-title">Обязательные</div><div class="ck-modal__group-desc">Обеспечивают базовую работу сайта и сохранение выбранных настроек.</div></div>',
+        '    </div>',
+        '    <div class="ck-modal__group">',
+        '      <label class="ck-switch"><input type="checkbox" id="ck-analytics" checked><span class="ck-switch__slider"></span></label>',
+        '      <div class="ck-modal__group-text"><div class="ck-modal__group-title">Аналитические</div><div class="ck-modal__group-desc">Помогают понять, какие страницы смотрят чаще и что стоит улучшить. Используются только в обобщенном виде.</div></div>',
+        '    </div>',
+        '    <div class="ck-modal__group">',
+        '      <label class="ck-switch"><input type="checkbox" id="ck-functional" checked><span class="ck-switch__slider"></span></label>',
+        '      <div class="ck-modal__group-text"><div class="ck-modal__group-title">Функциональные</div><div class="ck-modal__group-desc">Запоминают удобные настройки, чтобы не приходилось выбирать их заново.</div></div>',
+        '    </div>',
+        '    <div class="ck-modal__btns">',
+        '      <button class="ck-btn ck-btn--outline" type="button" id="ck-save-settings">Сохранить выбор</button>',
+        '      <button class="ck-btn ck-btn--yellow" type="button" id="ck-accept-all-modal">Принять все</button>',
+        '    </div>',
+        '  </div>',
+        '</div>'
+      ].join('');
+
+      document.body.appendChild(wrapper);
+      banner = document.getElementById('ck-banner');
+      modal = document.getElementById('ck-modal');
+    }
+
+    if (!banner || !modal || banner.dataset.cookieConsentReady === 'true') return;
+    banner.dataset.cookieConsentReady = 'true';
+
+    const openSettingsBtn = document.getElementById('ck-open-settings');
+    const acceptAllBtn = document.getElementById('ck-accept-all');
+    const acceptAllModalBtn = document.getElementById('ck-accept-all-modal');
+    const saveBtn = document.getElementById('ck-save-settings');
+    const analyticsCb = document.getElementById('ck-analytics');
+    const functionalCb = document.getElementById('ck-functional');
+
+    if (localStorage.getItem(LS_KEY_ACCEPT)) {
+      banner.remove();
+      modal.remove();
+      return;
+    }
+
+    function closeAll() {
+      banner.classList.remove('ck-banner--show');
+      modal.classList.remove('ck-modal--open');
+      window.setTimeout(function () {
+        banner.remove();
+        modal.remove();
+      }, 300);
+    }
+
+    function setAllAndClose() {
+      localStorage.setItem(LS_KEY_ACCEPT, 'all');
+      localStorage.setItem(LS_KEY_PREFS, JSON.stringify({
+        necessary: true,
+        analytics: true,
+        functional: true
+      }));
+      closeAll();
+    }
+
+    function saveCustomAndClose() {
+      localStorage.setItem(LS_KEY_ACCEPT, 'custom');
+      localStorage.setItem(LS_KEY_PREFS, JSON.stringify({
+        necessary: true,
+        analytics: !!(analyticsCb && analyticsCb.checked),
+        functional: !!(functionalCb && functionalCb.checked)
+      }));
+      closeAll();
+    }
+
+    if (openSettingsBtn) {
+      openSettingsBtn.addEventListener('click', function () {
+        modal.classList.add('ck-modal--open');
+      });
+    }
+    if (acceptAllBtn) acceptAllBtn.addEventListener('click', setAllAndClose);
+    if (acceptAllModalBtn) acceptAllModalBtn.addEventListener('click', setAllAndClose);
+    if (saveBtn) saveBtn.addEventListener('click', saveCustomAndClose);
+    modal.addEventListener('click', function (event) {
+      if (event.target.classList.contains('ck-modal__backdrop')) {
+        modal.classList.remove('ck-modal--open');
+      }
+    });
+
+    const showDelay = 15000;
+    window.setTimeout(function () {
+      localStorage.setItem(LS_KEY_SHOWN, '1');
+      if (document.body.contains(banner)) banner.classList.add('ck-banner--show');
+    }, showDelay);
+  }
+
   function initCookieFabLayer() {
     const banner = document.getElementById('ck-banner');
     const modal = document.getElementById('ck-modal');
@@ -643,6 +1035,10 @@
   }
 
   ready(function () {
+    initPersonalDataConsent();
+    initCookieConsentBanner();
+    initMetrikaCounter();
+    initMetrikaGoals();
     initLenis();
     initReveal();
     initCopyButtons();
@@ -650,6 +1046,7 @@
     initMobileMenuPolish();
     initMobileFooterDev();
     initLazyFooterVideos();
+    initFooterTyping();
     initStableMobileHero();
     initA11yPolish();
     initCookieFabLayer();

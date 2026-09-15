@@ -1122,7 +1122,7 @@ html,body{max-width:100%!important;overflow-x:hidden!important}@media (min-width
   top:4%;
   width:40%;
   height:100%;
-  background:url("assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
+  background:url("/assets/optimized/2025/10/logo_gray.webp") center/contain no-repeat;
   opacity:.22;
   transform:translate3d(0,var(--shift,0),0) scale(.55);
   pointer-events:none;

@@ -23,7 +23,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
     if(successHome){
       successHome.addEventListener('click',e=>{
         e.preventDefault();
-        window.location.href='index.html'; /* редирект на главную */
+        window.location.href='/'; /* редирект на главную */
       });
     }
 
@@ -189,123 +189,6 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   }
 })();
 
-/* inline script 4 */
-(function(){
-    const banner = document.getElementById('ck-banner');
-    const modal  = document.getElementById('ck-modal');
-    if (!banner || !modal) return;
-
-    const openSettingsBtn   = document.getElementById('ck-open-settings');
-    const acceptAllBtn      = document.getElementById('ck-accept-all');
-    const acceptAllModalBtn = document.getElementById('ck-accept-all-modal');
-    const saveBtn           = document.getElementById('ck-save-settings');
-
-    const analyticsCb  = document.getElementById('ck-analytics');
-    const functionalCb = document.getElementById('ck-functional');
-    const marketingCb  = document.getElementById('ck-marketing');
-
-    const LS_KEY_ACCEPT = 'ckAccepted';
-    const LS_KEY_PREFS  = 'ckPrefs';
-
-    // FAB (плавающая кнопка мессенджеров), если есть на странице
-    const fab = document.querySelector('.messenger-fab');
-
-    function dimFab(isDim) {
-      if (!fab) return;
-
-      // закрыть меню FAB
-      fab.classList.remove('open');
-
-      // опустить FAB под модалку куки и отключить клики
-      fab.style.setProperty('z-index', isDim ? '9000' : '2147483647', 'important');
-      fab.style.pointerEvents = isDim ? 'none' : 'auto';
-      fab.style.filter = isDim ? 'opacity(.35) blur(.5px)' : '';
-
-      const menu = fab.querySelector('.messenger-fab__menu');
-      if (menu) {
-        menu.style.opacity = isDim ? '0' : '';
-        menu.style.pointerEvents = isDim ? 'none' : '';
-        menu.style.transform = isDim ? 'translateX(-50%) translateY(10px)' : '';
-      }
-    }
-
-    // если уже приняли / сохранили настройки — ничего не показываем
-    if (localStorage.getItem(LS_KEY_ACCEPT)) {
-      banner.remove();
-      modal.remove();
-      return;
-    }
-
-    // показать баннер через 15 секунд
-    setTimeout(() => {
-      banner.classList.add('ck-banner--show');
-    }, 15000);
-
-    function setAllAndClose() {
-      const prefs = {
-        necessary: true,
-        analytics: true,
-        functional: true,
-        marketing: true
-      };
-      localStorage.setItem(LS_KEY_ACCEPT, 'all');
-      localStorage.setItem(LS_KEY_PREFS, JSON.stringify(prefs));
-      closeAll();
-    }
-
-    function saveCustomAndClose() {
-      const prefs = {
-        necessary: true,
-        analytics: !!(analyticsCb && analyticsCb.checked),
-        functional: !!(functionalCb && functionalCb.checked),
-        marketing: !!(marketingCb && marketingCb.checked)
-      };
-      localStorage.setItem(LS_KEY_ACCEPT, 'custom');
-      localStorage.setItem(LS_KEY_PREFS, JSON.stringify(prefs));
-      closeAll();
-    }
-
-    function openModal() {
-      modal.classList.add('ck-modal--open');
-      dimFab(true); // FAB под модалку
-    }
-
-    function closeModal() {
-      modal.classList.remove('ck-modal--open');
-      dimFab(false); // вернуть FAB
-    }
-
-    function closeAll() {
-      banner.classList.remove('ck-banner--show');
-      closeModal();
-      dimFab(false);
-      setTimeout(() => {
-        banner.remove();
-        modal.remove();
-      }, 300);
-    }
-
-    if (openSettingsBtn) {
-      openSettingsBtn.addEventListener('click', openModal);
-    }
-    if (acceptAllBtn) {
-      acceptAllBtn.addEventListener('click', setAllAndClose);
-    }
-    if (acceptAllModalBtn) {
-      acceptAllModalBtn.addEventListener('click', setAllAndClose);
-    }
-    if (saveBtn) {
-      saveBtn.addEventListener('click', saveCustomAndClose);
-    }
-
-    // клик по фону модалки закрывает только модалку, не баннер
-    modal.addEventListener('click', function(e){
-      if (e.target.classList.contains('ck-modal__backdrop')) {
-        closeModal();
-      }
-    });
-  })();
-
 /* inline script 5 */
 /* --- Слайдер с ленивой загрузкой слайдов --- */
 (function(){
@@ -368,6 +251,7 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   const stage = document.querySelector('.stage');
   const logo  = document.querySelector('.overlay .logo');
   const img   = document.querySelector('.parallax-img');
+  if (!stage) return;
   const SPEED_LOGO = -0.50;
   const SPEED_IMG  = SPEED_LOGO / 4;
   function tick(){
@@ -386,12 +270,12 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
   const span = el.querySelector('span');
 
   const items = [
-    'BIM-моделирование инженерных систем,<br>проектирование и 3D-визуализация<br>промышленных объектов',
-    'Проектируем и создаем архитектуру, выраженную в цифровой трехмерной модели с отображением всех элементов будущего объекта. Включая все инженерные системы.',
-    'Онлайн-отслеживаем ход проекта в реальном времени. Гарантируем отсутствие коллизий и даем возможность прогуляться по будущему 3D-объекту.',
-    'Согласовываем и контролируем процессы в удобном личном кабинете. Выполняем функции генерального проектировщика как современный digital-сервис с собственной командой.',
-    'Разрабатываем полный и исчерпывающий комплект рабочей документации (РД), который служит единственным источником истины для подрядчиков, сметчиков и снабженцев.',
-    'Консультируем в кризисных строительных ситуациях. Реанимируем проекты, модернизируем и перевооружаем уже существующие объекты.'
+    'Проектирование зданий и сооружений,<br>BIM, проектная и рабочая документация<br>для промышленных объектов',
+    'Создаем BIM-модель будущего объекта: архитектура, конструкции и инженерные системы видны в единой цифровой среде еще до стройки.',
+    'Отслеживаем ход проекта онлайн, заранее находим коллизии инженерных систем и показываем будущий 3D-объект до выхода на площадку.',
+    'Согласовываем проектные решения в удобном личном кабинете и выполняем функции генерального проектировщика как современный digital-сервис.',
+    'Разрабатываем комплект рабочей документации: чертежи, спецификации и решения, по которым подрядчикам понятно, что строить и как считать.',
+    'Помогаем в сложных строительных ситуациях: анализируем проект, предлагаем модернизацию и техническое перевооружение существующих объектов.'
   ];
 
   let idx = 0;
@@ -1577,11 +1461,11 @@ function __allnrgReady(fn){ document.readyState === "loading" ? document.addEven
 
   const phrases = [
     first,
-    'Проектируем и создаем архитектуру, выраженную в цифровой трехмерной модели, с отображением всех элементов будущего объекта. Включая все инженерные системы.',
-    'Онлайн-отслеживаем ход проекта в реальном времени. Гарантированное отсутствие коллизий в проекте и возможность прогуляться по будущему 3D объекту.',
-    'Согласовываем и контролируем процессы в удобном личном кабинете. Выполняем функции генерального проектировщика, как современный digital-сервис, с собственным штатом компетентных менеджеров и проектировщиков.',
-    'Разрабатываем полный и исчерпывающий комплект рабочей документации (РД), который служит единственным источником истины для подрядчиков, сметчиков и снабженцев.',
-    'Консультируем в кризисных строительных ситуациях. Реанимируем строительные проекты, а также модернизируем и перевооружаем уже существующие.'
+    'Создаем BIM-модель будущего объекта: архитектура, конструкции и инженерные системы видны в единой цифровой среде еще до стройки.',
+    'Отслеживаем ход проекта онлайн, заранее находим коллизии инженерных систем и показываем будущий 3D-объект до выхода на площадку.',
+    'Согласовываем проектные решения в удобном личном кабинете и выполняем функции генерального проектировщика как современный digital-сервис.',
+    'Разрабатываем комплект рабочей документации: чертежи, спецификации и решения, по которым подрядчикам понятно, что строить и как считать.',
+    'Помогаем в сложных строительных ситуациях: анализируем проект, предлагаем модернизацию и техническое перевооружение существующих объектов.'
   ];
 
   let i = 0;
@@ -2107,6 +1991,7 @@ document.querySelectorAll('.exps-card[data-bg]').forEach(el=>{
         : scroller.scrollTop;
     }
     function updateStart(){
+      if (!cta || !scroller || scroller === window && !window) return;
       const r = cta.getBoundingClientRect();
       if (scroller === window){
         const st = scrollTop();
@@ -2934,11 +2819,11 @@ window.addEventListener('load',()=>{
   if (!el) return;
 
   const phrases = [
-    'Проектируем и создаем архитектуру, выраженную в цифровой трехмерной модели, с отображением всех элементов будущего объекта. Включая все инженерные системы.',
-    'Онлайн-отслеживаем ход проекта в реальном времени. Гарантированное отсутствие коллизий в проекте и возможность прогуляться по будущему 3D объекту.',
-    'Согласовываем и контролируем процессы в удобном личном кабинете. Выполняем функции генерального проектировщика, как современный digital-сервис, с собственным штатом компетентных менеджеров и проектировщиков.',
-    'Разрабатываем полный и исчерпывающий комплект рабочей документации (РД), который служит единственным источником истины для подрядчиков, сметчиков и снабженцев.',
-    'Консультируем в кризисных строительных ситуациях. Реанимируем строительные проекты, а также модернизируем и перевооружаем уже существующие.',
+    'Создаем BIM-модель будущего объекта: архитектура, конструкции и инженерные системы видны в единой цифровой среде еще до стройки.',
+    'Отслеживаем ход проекта онлайн, заранее находим коллизии инженерных систем и показываем будущий 3D-объект до выхода на площадку.',
+    'Согласовываем проектные решения в удобном личном кабинете и выполняем функции генерального проектировщика как современный digital-сервис.',
+    'Разрабатываем комплект рабочей документации: чертежи, спецификации и решения, по которым подрядчикам понятно, что строить и как считать.',
+    'Помогаем в сложных строительных ситуациях: анализируем проект, предлагаем модернизацию и техническое перевооружение существующих объектов.',
     'BIM-моделирование инженерных систем и проектирование промышленных объектов'
   ];
 
@@ -3774,7 +3659,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'contacts.html';
+                window.location.href = '/kontakty/';
                 return;
             }
 
@@ -3786,7 +3671,7 @@ document.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
                 e.stopPropagation();
-                window.location.href = 'privacy.html';
+                window.location.href = '/privacy/';
                 return;
             }
         }, true);
